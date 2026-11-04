@@ -65,9 +65,14 @@ function renderGrid() {
 
     card.addEventListener('mouseenter', () => highlightMarker(photo.filename));
     card.addEventListener('mouseleave', () => unhighlightMarker(photo.filename));
+    card.addEventListener('focus', () => highlightMarker(photo.filename));
+    card.addEventListener('blur', () => unhighlightMarker(photo.filename));
     card.addEventListener('click', () => openLightbox(idx));
     card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') openLightbox(idx);
+      if (e.key === 'Enter' || e.key === 'Select' || e.key === 'OK' || e.keyCode === 13) {
+        e.preventDefault();
+        openLightbox(idx);
+      }
     });
 
     grid.appendChild(card);
@@ -343,13 +348,13 @@ function initEvents() {
     const isLb = lightbox.classList.contains('active');
 
     if (isLb) {
-      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === 'd' || e.key === 'D') {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === 'd' || e.key === 'D') {
         e.preventDefault();
         nextPhoto();
-      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key === 'a' || e.key === 'A') {
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'a' || e.key === 'A') {
         e.preventDefault();
         prevPhoto();
-      } else if (e.key === ' ' || e.key === 'i' || e.key === 'I') {
+      } else if (e.key === ' ' || e.key === 'i' || e.key === 'I' || e.key === 'Enter' || e.key === 'Select' || e.key === 'OK' || e.keyCode === 13) {
         e.preventDefault();
         toggleHud();
       } else if (e.key === 'Escape' || e.key === 'Backspace' || e.keyCode === 461 || e.keyCode === 10009) {
