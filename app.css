@@ -86,13 +86,6 @@ body {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.custom-pin.is-hero {
-  background: var(--gold);
-  width: 17px;
-  height: 17px;
-  box-shadow: 0 0 14px var(--gold);
-}
-
 .custom-pin.active {
   transform: scale(1.6);
   border-color: #fff;
@@ -122,33 +115,22 @@ body {
   flex-wrap: wrap;
 }
 
-.view-switch {
+.gallery-title-wrap {
   display: flex;
-  gap: 8px;
+  align-items: baseline;
+  gap: 10px;
 }
 
-.switch-btn {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.84rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.18s ease;
-}
-
-.switch-btn:hover {
+.gallery-title {
+  font-size: 0.95rem;
+  font-weight: 700;
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.25);
+  letter-spacing: -0.01em;
 }
 
-.switch-btn.active {
-  background: rgba(0, 240, 255, 0.14);
-  color: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+.photo-count {
+  font-size: 0.8rem;
+  color: var(--text-dim);
 }
 
 .header-right {
@@ -229,19 +211,6 @@ body {
   transform: scale(1.05);
 }
 
-.card-star {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: rgba(250, 204, 21, 0.95);
-  color: #000;
-  font-size: 0.68rem;
-  font-weight: 800;
-  padding: 2px 7px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  z-index: 2;
-}
 
 .card-caption {
   padding: 10px 12px;

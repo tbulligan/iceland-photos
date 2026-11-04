@@ -1,6 +1,4 @@
 let allPhotos = [];
-let currentView = 'highlights'; // 'highlights' or 'all'
-let filteredPhotos = [];
 let activeIndex = 0;
 let map, markersLayer, photoMarkers = new Map();
 let captionTimer = null;
@@ -11,22 +9,17 @@ async function init() {
   try {
     const res = await fetch('data.json?v=' + Date.now());
     allPhotos = await res.json();
-    updateViewCounts();
+    
+    const countEl = document.getElementById('photo-count');
+    if (countEl) countEl.textContent = `${allPhotos.length} photos`;
+
     initMap();
-    setView(currentView);
+    renderGrid();
+    updateMapMarkers();
     initEvents();
   } catch (err) {
     console.error('Failed to load photos:', err);
   }
-}
-
-function updateViewCounts() {
-  const heroesCount = allPhotos.filter(p => p.is_hero).length;
-  const totalCount = allPhotos.length;
-  const btnHighlights = document.getElementById('btn-highlights');
-  const btnAll = document.getElementById('btn-all');
-  if (btnHighlights) btnHighlights.textContent = `★ Highlights (${heroesCount})`;
-  if (btnAll) btnAll.textContent = `Full Journey (${totalCount})`;
 }
 
 // Satellite Map (Esri World Imagery, Zero API Key)
@@ -46,39 +39,19 @@ function initMap() {
   markersLayer = L.layerGroup().addTo(map);
 }
 
-// View Toggle: Highlights vs All
-function setView(view) {
-  currentView = view;
-  document.querySelectorAll('.switch-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.view === view);
-  });
-
-  if (view === 'highlights') {
-    filteredPhotos = allPhotos.filter(p => p.is_hero);
-  } else {
-    filteredPhotos = [...allPhotos];
-  }
-
-  renderGrid();
-  updateMapMarkers();
-}
-
 // Render Card Grid
 function renderGrid() {
   const grid = document.getElementById('gallery-grid');
   grid.innerHTML = '';
 
-  filteredPhotos.forEach((photo, idx) => {
+  allPhotos.forEach((photo, idx) => {
     const card = document.createElement('div');
     card.className = 'photo-card';
     card.id = `card-${photo.filename}`;
     card.tabIndex = 0;
 
-    const starHtml = photo.is_hero ? '<div class="card-star">★</div>' : '';
-
     card.innerHTML = `
       <div class="card-img-wrap">
-        ${starHtml}
         <img class="card-thumb" src="${photo.thumb}" alt="${photo.title}" loading="lazy" />
       </div>
       <div class="card-caption">
@@ -108,7 +81,7 @@ function updateMapMarkers() {
 
   // Group coordinates
   const coordGroups = new Map();
-  filteredPhotos.forEach(p => {
+  allPhotos.forEach(p => {
     if (p.lat && p.lon) {
       const key = `${p.lat.toFixed(3)},${p.lon.toFixed(3)}`;
       if (!coordGroups.has(key)) coordGroups.set(key, []);
@@ -116,14 +89,12 @@ function updateMapMarkers() {
     }
   });
 
-  coordGroups.forEach((group, key) => {
+  coordGroups.forEach((group) => {
     const p = group[0];
-    const isHero = group.some(item => item.is_hero);
-
     const icon = L.divIcon({
-      className: isHero ? 'custom-pin is-hero' : 'custom-pin',
-      iconSize: isHero ? [17, 17] : [13, 13],
-      iconAnchor: isHero ? [8, 8] : [6, 6]
+      className: 'custom-pin',
+      iconSize: [13, 13],
+      iconAnchor: [6, 6]
     });
 
     const marker = L.marker([p.lat, p.lon], { icon }).addTo(markersLayer);
@@ -137,7 +108,7 @@ function updateMapMarkers() {
     });
   });
 
-  const coords = filteredPhotos.filter(p => p.lat && p.lon).map(p => [p.lat, p.lon]);
+  const coords = allPhotos.filter(p => p.lat && p.lon).map(p => [p.lat, p.lon]);
   if (coords.length > 0) {
     map.fitBounds(L.latLngBounds(coords), { padding: [40, 40], maxZoom: 13 });
   }
@@ -173,7 +144,7 @@ const capTitle = document.getElementById('cap-title');
 const capSub = document.getElementById('cap-sub');
 
 function openLightbox(index) {
-  if (index < 0 || index >= filteredPhotos.length) return;
+  if (index < 0 || index >= allPhotos.length) return;
   activeIndex = index;
   updateLightbox();
   lightbox.classList.add('active');
@@ -197,7 +168,7 @@ function closeLightbox(fromPopstate = false) {
     try { history.back(); } catch (e) {}
   }
 
-  const p = filteredPhotos[activeIndex];
+  const p = allPhotos[activeIndex];
   if (p) {
     const card = document.getElementById(`card-${p.filename}`);
     if (card) card.focus();
@@ -211,17 +182,17 @@ window.addEventListener('popstate', () => {
 });
 
 function nextPhoto() {
-  activeIndex = (activeIndex + 1) % filteredPhotos.length;
+  activeIndex = (activeIndex + 1) % allPhotos.length;
   updateLightbox();
 }
 
 function prevPhoto() {
-  activeIndex = (activeIndex - 1 + filteredPhotos.length) % filteredPhotos.length;
+  activeIndex = (activeIndex - 1 + allPhotos.length) % allPhotos.length;
   updateLightbox();
 }
 
 function updateLightbox() {
-  const p = filteredPhotos[activeIndex];
+  const p = allPhotos[activeIndex];
   if (!p) return;
 
   // Release memory for smart TVs
@@ -245,12 +216,12 @@ function updateLightbox() {
   }
 
   // Bidirectional Preload (next + previous)
-  const nextIdx = (activeIndex + 1) % filteredPhotos.length;
-  const prevIdx = (activeIndex - 1 + filteredPhotos.length) % filteredPhotos.length;
+  const nextIdx = (activeIndex + 1) % allPhotos.length;
+  const prevIdx = (activeIndex - 1 + allPhotos.length) % allPhotos.length;
   preloadedNext = new Image();
-  preloadedNext.src = filteredPhotos[nextIdx].src;
+  preloadedNext.src = allPhotos[nextIdx].src;
   preloadedPrev = new Image();
-  preloadedPrev.src = filteredPhotos[prevIdx].src;
+  preloadedPrev.src = allPhotos[prevIdx].src;
 }
 
 function showHudBriefly() {
@@ -319,10 +290,6 @@ function initEvents() {
     }
   }, { passive: true });
 
-  // Switch Views
-  document.getElementById('btn-highlights').addEventListener('click', () => setView('highlights'));
-  document.getElementById('btn-all').addEventListener('click', () => setView('all'));
-
   // Mobile Touch Swipe
   let touchStartX = 0;
   lightbox.addEventListener('touchstart', (e) => {
@@ -344,10 +311,10 @@ function initEvents() {
     const isLb = lightbox.classList.contains('active');
 
     if (isLb) {
-      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === 'd' || e.key === 'D' || e.key === 'l' || e.key === 'L') {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === 'd' || e.key === 'D') {
         e.preventDefault();
         nextPhoto();
-      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key === 'a' || e.key === 'A' || e.key === 'h' || e.key === 'H') {
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key === 'a' || e.key === 'A') {
         e.preventDefault();
         prevPhoto();
       } else if (e.key === ' ' || e.key === 'i' || e.key === 'I') {
@@ -361,8 +328,6 @@ function initEvents() {
         toggleFullscreen();
       }
     } else {
-      if (e.key === '1') setView('highlights');
-      if (e.key === '2') setView('all');
       if (e.key === 'f' || e.key === 'F') toggleFullscreen();
     }
   });
