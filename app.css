@@ -81,16 +81,24 @@ body {
   background: var(--accent);
   border: 2px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.85);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s, box-shadow 0.25s;
 }
 
 .custom-pin.active {
-  transform: scale(1.6);
-  border-color: #fff;
-  box-shadow: 0 0 24px #fff;
+  background: #facc15 !important; /* Radiant gold/yellow */
+  border-color: #ffffff !important;
+  box-shadow: 0 0 14px #facc15, 0 0 28px rgba(250, 204, 21, 0.9) !important;
+  transform: scale(2.0) !important;
   z-index: 9999 !important;
+}
+
+.flag-icon {
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
 }
 
 /* =========================================

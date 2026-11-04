@@ -100,6 +100,7 @@ function updateMapMarkers() {
     const marker = L.marker([p.lat, p.lon], { icon }).addTo(markersLayer);
     
     marker.on('click', () => {
+      highlightMarker(p.filename);
       scrollToCard(p.filename);
     });
 
@@ -115,13 +116,18 @@ function updateMapMarkers() {
 }
 
 function highlightMarker(fname) {
+  photoMarkers.forEach(m => {
+    if (m._icon) m._icon.classList.remove('active');
+  });
   const marker = photoMarkers.get(fname);
   if (marker && marker._icon) marker._icon.classList.add('active');
 }
 
 function unhighlightMarker(fname) {
-  const marker = photoMarkers.get(fname);
-  if (marker && marker._icon) marker._icon.classList.remove('active');
+  if (lightbox.classList.contains('active')) {
+    const curPhoto = allPhotos[activeIndex];
+    if (curPhoto) highlightMarker(curPhoto.filename);
+  }
 }
 
 function scrollToCard(fname) {
