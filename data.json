@@ -1,5 +1,96 @@
 [
   {
+    "filename": "IMG_4552.JPG",
+    "title": "Descent into Continental Rift",
+    "place": "Silfra Fissure (Dive 1)",
+    "is_hero": false,
+    "datetime": "2023:11:03 11:41:12",
+    "date_display": "Nov 3 \u2022 11:41",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4552.jpg",
+    "src": "photos/IMG_4552.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4557.JPG",
+    "title": "Glacial Water 100m Visibility",
+    "place": "Silfra Fissure (Dive 1)",
+    "is_hero": false,
+    "datetime": "2023:11:03 11:41:43",
+    "date_display": "Nov 3 \u2022 11:41",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4557.jpg",
+    "src": "photos/IMG_4557.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4582.JPG",
+    "title": "Between Two Continents",
+    "place": "Silfra Fissure (Dive 1)",
+    "is_hero": true,
+    "datetime": "2023:11:03 11:50:23",
+    "date_display": "Nov 3 \u2022 11:50",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4582.jpg",
+    "src": "photos/IMG_4582.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4590.JPG",
+    "title": "Silfra Hall & Light Beams",
+    "place": "Silfra Fissure (Dive 1)",
+    "is_hero": false,
+    "datetime": "2023:11:03 11:56:43",
+    "date_display": "Nov 3 \u2022 11:56",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4590.jpg",
+    "src": "photos/IMG_4590.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4616.JPG",
+    "title": "Silfra Cathedral",
+    "place": "Silfra Fissure (Dive 1)",
+    "is_hero": true,
+    "datetime": "2023:11:03 12:05:09",
+    "date_display": "Nov 3 \u2022 12:05",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4616.jpg",
+    "src": "photos/IMG_4616.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4645.JPG",
+    "title": "Silfra Lagoon Ascent",
+    "place": "Silfra Lagoon (Dive 1)",
+    "is_hero": false,
+    "datetime": "2023:11:03 12:14:10",
+    "date_display": "Nov 3 \u2022 12:14",
+    "lat": 64.25643,
+    "lon": -21.11661,
+    "thumb": "thumbs/IMG_4645.jpg",
+    "src": "photos/IMG_4645.jpg",
+    "aspect": 1.5
+  },
+  {
+    "filename": "IMG_4686.JPG",
+    "title": "Dav\u00ed\u00f0sgj\u00e1 Deep Chasm",
+    "place": "Dav\u00ed\u00f0sgj\u00e1 \u2022 Lake \u00deingvallavatn (Dive 2)",
+    "is_hero": true,
+    "datetime": "2023:11:03 14:22:18",
+    "date_display": "Nov 3 \u2022 14:22",
+    "lat": 64.23617,
+    "lon": -21.04493,
+    "thumb": "thumbs/IMG_4686.jpg",
+    "src": "photos/IMG_4686.jpg",
+    "aspect": 1.5
+  },
+  {
     "filename": "PXL_20261018_085524369.jpg",
     "title": "Drangsnes Morning Ocean",
     "place": "Drangsnes \u2022 Westfjords",
@@ -39,19 +130,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261020_082333462.jpg",
-    "title": "Icelandic Verse on Fjord Bench",
-    "place": "Drangsnes \u2022 Strandir",
-    "is_hero": false,
-    "datetime": "2026:10:20 08:23:33",
-    "date_display": "Oct 20 \u2022 08:23",
-    "lat": 65.781306,
-    "lon": -21.519425,
-    "thumb": "thumbs/PXL_20261020_082333462.jpg",
-    "src": "photos/PXL_20261020_082333462.jpg",
-    "aspect": 1.778
-  },
-  {
     "filename": "PXL_20261020_152145792.jpg",
     "title": "H\u00f3lmav\u00edkurkirkja over Steingr\u00edmsfj\u00f6r\u00f0ur",
     "place": "H\u00f3lmav\u00edk \u2022 Westfjords",
@@ -63,19 +141,6 @@
     "thumb": "thumbs/PXL_20261020_152145792.jpg",
     "src": "photos/PXL_20261020_152145792.jpg",
     "aspect": 1.778
-  },
-  {
-    "filename": "PXL_20261020_223127604.NIGHT.jpg",
-    "title": "First Aurora Glow",
-    "place": "Drangsnes Sky",
-    "is_hero": false,
-    "datetime": "2026:10:20 22:31:27",
-    "date_display": "Oct 20 \u2022 22:31",
-    "lat": 65.780931,
-    "lon": -21.518942,
-    "thumb": "thumbs/PXL_20261020_223127604.NIGHT.jpg",
-    "src": "photos/PXL_20261020_223127604.NIGHT.jpg",
-    "aspect": 0.562
   },
   {
     "filename": "PXL_20261020_230151948.NIGHT.jpg",
@@ -117,19 +182,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261020_230829906.NIGHT.jpg",
-    "title": "Double Aurora Arch",
-    "place": "Drangsnes Sky",
-    "is_hero": false,
-    "datetime": "2026:10:20 23:08:29",
-    "date_display": "Oct 20 \u2022 23:08",
-    "lat": 65.781186,
-    "lon": -21.519622,
-    "thumb": "thumbs/PXL_20261020_230829906.NIGHT.jpg",
-    "src": "photos/PXL_20261020_230829906.NIGHT.jpg",
-    "aspect": 0.562
-  },
-  {
     "filename": "PXL_20261020_230907609.NIGHT.jpg",
     "title": "Corona Explosion",
     "place": "Drangsnes \u2022 Westfjords",
@@ -140,6 +192,19 @@
     "lon": -21.519622,
     "thumb": "thumbs/PXL_20261020_230907609.NIGHT.jpg",
     "src": "photos/PXL_20261020_230907609.NIGHT.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261021_081252444.jpg",
+    "title": "Strandir Valley Autumn Frost",
+    "place": "Drangsnes \u2022 Westfjords",
+    "is_hero": true,
+    "datetime": "2026:10:21 08:12:52",
+    "date_display": "Oct 21 \u2022 08:12",
+    "lat": 65.781139,
+    "lon": -21.519081,
+    "thumb": "thumbs/PXL_20261021_081252444.jpg",
+    "src": "photos/PXL_20261021_081252444.jpg",
     "aspect": 1.778
   },
   {
@@ -247,6 +312,19 @@
     "aspect": 1.778
   },
   {
+    "filename": "PXL_20261022_215442711.NIGHT.jpg",
+    "title": "Reykjav\u00edk Aurora Borealis Vortex",
+    "place": "Reykjav\u00edk Night Sky",
+    "lat": 64.14484,
+    "lon": -21.88945,
+    "date": "2026:10:22 21:54:42",
+    "date_display": "Oct 22 \u2022 21:54",
+    "is_hero": true,
+    "src": "photos/PXL_20261022_215442711.NIGHT.jpg",
+    "thumb": "thumbs/PXL_20261022_215442711.NIGHT.jpg",
+    "datetime": "2026:10:22 21:54:42"
+  },
+  {
     "filename": "PXL_20261026_163647963.jpg",
     "title": "Cooling Molten Lava Flow",
     "place": "Icelandic Lava Show \u2022 Reykjav\u00edk",
@@ -258,97 +336,6 @@
     "thumb": "thumbs/PXL_20261026_163647963.jpg",
     "src": "photos/PXL_20261026_163647963.jpg",
     "aspect": 1.778
-  },
-  {
-    "filename": "IMG_4552.JPG",
-    "title": "Descent into Continental Rift",
-    "place": "Silfra Fissure (Dive 1)",
-    "is_hero": false,
-    "datetime": "2023:11:03 11:41:12",
-    "date_display": "Nov 3 \u2022 11:41",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4552.jpg",
-    "src": "photos/IMG_4552.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4557.JPG",
-    "title": "Glacial Water 100m Visibility",
-    "place": "Silfra Fissure (Dive 1)",
-    "is_hero": false,
-    "datetime": "2023:11:03 11:41:43",
-    "date_display": "Nov 3 \u2022 11:41",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4557.jpg",
-    "src": "photos/IMG_4557.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4582.JPG",
-    "title": "Between Two Continents",
-    "place": "Silfra Fissure (Dive 1)",
-    "is_hero": true,
-    "datetime": "2023:11:03 11:50:23",
-    "date_display": "Nov 3 \u2022 11:50",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4582.jpg",
-    "src": "photos/IMG_4582.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4590.JPG",
-    "title": "Silfra Hall & Light Beams",
-    "place": "Silfra Fissure (Dive 1)",
-    "is_hero": false,
-    "datetime": "2023:11:03 11:56:43",
-    "date_display": "Nov 3 \u2022 11:56",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4590.jpg",
-    "src": "photos/IMG_4590.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4616.JPG",
-    "title": "Silfra Cathedral",
-    "place": "Silfra Fissure (Dive 1)",
-    "is_hero": true,
-    "datetime": "2023:11:03 12:05:09",
-    "date_display": "Nov 3 \u2022 12:05",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4616.jpg",
-    "src": "photos/IMG_4616.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4645.JPG",
-    "title": "Silfra Lagoon Ascent",
-    "place": "Silfra Lagoon (Dive 1)",
-    "is_hero": false,
-    "datetime": "2023:11:03 12:14:10",
-    "date_display": "Nov 3 \u2022 12:14",
-    "lat": 64.25643,
-    "lon": -21.11661,
-    "thumb": "thumbs/IMG_4645.jpg",
-    "src": "photos/IMG_4645.jpg",
-    "aspect": 1.5
-  },
-  {
-    "filename": "IMG_4686.JPG",
-    "title": "Dav\u00ed\u00f0sgj\u00e1 Deep Chasm",
-    "place": "Dav\u00ed\u00f0sgj\u00e1 \u2022 Lake \u00deingvallavatn (Dive 2)",
-    "is_hero": true,
-    "datetime": "2023:11:03 14:22:18",
-    "date_display": "Nov 3 \u2022 14:22",
-    "lat": 64.23617,
-    "lon": -21.04493,
-    "thumb": "thumbs/IMG_4686.jpg",
-    "src": "photos/IMG_4686.jpg",
-    "aspect": 1.5
   },
   {
     "filename": "PXL_20261028_154753043.jpg",
@@ -429,6 +416,19 @@
     "aspect": 1.778
   },
   {
+    "filename": "PXL_20261029_162720896.jpg",
+    "title": "Crystal Cave Tephra Layers & Fluted Ice",
+    "place": "Vatnaj\u00f6kull Ice Cave",
+    "is_hero": true,
+    "datetime": "2026:10:29 16:27:20",
+    "date_display": "Oct 29 \u2022 16:27",
+    "lat": 64.098875,
+    "lon": -16.30335,
+    "thumb": "thumbs/PXL_20261029_162720896.jpg",
+    "src": "photos/PXL_20261029_162720896.jpg",
+    "aspect": 0.562
+  },
+  {
     "filename": "PXL_20261029_163623608.jpg",
     "title": "Glacier Lagoon Calving Ice Wall",
     "place": "Fjalls\u00e1rl\u00f3n Glacier Lagoon",
@@ -479,6 +479,19 @@
     "thumb": "thumbs/PXL_20261030_102016214.jpg",
     "src": "photos/PXL_20261030_102016214.jpg",
     "aspect": 0.562
+  },
+  {
+    "filename": "PXL_20261030_102417128.jpg",
+    "title": "Fallj\u00f6kull Glacier Crevasse Field",
+    "place": "Fallj\u00f6kull \u2022 Vatnaj\u00f6kull",
+    "is_hero": true,
+    "datetime": "2026:10:30 10:24:17",
+    "date_display": "Oct 30 \u2022 10:24",
+    "lat": 63.971631,
+    "lon": -16.803847,
+    "thumb": "thumbs/PXL_20261030_102417128.jpg",
+    "src": "photos/PXL_20261030_102417128.jpg",
+    "aspect": 1.778
   },
   {
     "filename": "PXL_20261030_103618991.jpg",
@@ -676,6 +689,19 @@
     "aspect": 1.778
   },
   {
+    "filename": "PXL_20261031_133314715.jpg",
+    "title": "L\u00f3ndrangar Ocean Promontory & Rain Squall",
+    "place": "L\u00f3ndrangar \u2022 Sn\u00e6fellsnes",
+    "is_hero": true,
+    "datetime": "2026:10:31 13:33:14",
+    "date_display": "Oct 31 \u2022 13:33",
+    "lat": 64.735233,
+    "lon": -23.77415,
+    "thumb": "thumbs/PXL_20261031_133314715.jpg",
+    "src": "photos/PXL_20261031_133314715.jpg",
+    "aspect": 1.778
+  },
+  {
     "filename": "PXL_20261031_140732367.jpg",
     "title": "Gatklettur Natural Sea Arch",
     "place": "Arnarstapi Coast",
@@ -686,6 +712,19 @@
     "lon": -23.622189,
     "thumb": "thumbs/PXL_20261031_140732367.jpg",
     "src": "photos/PXL_20261031_140732367.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261031_141754942.jpg",
+    "title": "Arnarstapi Basalt Sea Cliffs",
+    "place": "Arnarstapi \u2022 Sn\u00e6fellsnes",
+    "is_hero": true,
+    "datetime": "2026:10:31 14:17:54",
+    "date_display": "Oct 31 \u2022 14:17",
+    "lat": 64.767811,
+    "lon": -23.616953,
+    "thumb": "thumbs/PXL_20261031_141754942.jpg",
+    "src": "photos/PXL_20261031_141754942.jpg",
     "aspect": 1.778
   },
   {
@@ -739,17 +778,5 @@
     "thumb": "thumbs/PXL_20261031_211327423.jpg",
     "src": "photos/PXL_20261031_211327423.jpg",
     "aspect": 1.778
-  },
-  {
-    "filename": "PXL_20261022_215442711.NIGHT.jpg",
-    "title": "Reykjav\u00edk Aurora Borealis Vortex",
-    "place": "Reykjav\u00edk Night Sky",
-    "lat": 64.14484,
-    "lon": -21.88945,
-    "date": "2026:10:22 21:54:42",
-    "date_display": "Oct 22 \u2022 21:54",
-    "is_hero": true,
-    "src": "photos/PXL_20261022_215442711.NIGHT.jpg",
-    "thumb": "thumbs/PXL_20261022_215442711.NIGHT.jpg"
   }
 ]
