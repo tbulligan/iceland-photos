@@ -10,9 +10,22 @@ PHOTOS_DIR = os.path.join(OUTPUT_DIR, 'photos')
 COORDS_SILFRA = (64.25643, -21.11661)
 COORDS_DAVID = (64.23617, -21.04493)
 
-# 22 HIGHLIGHT HEROES (Every key milestone, zero redundancy)
+FALLBACK_COORDS = {
+    '77033.jpg': (65.78125, -21.51889),
+    '76752.jpg': (65.78093, -21.51894),
+    '77436.jpg': (65.78093, -21.51894),
+    'IMG_4188.jpeg': (65.78229, -21.49988),
+    '1000089008.jpg': (64.14480, -21.93040),
+    '_DSC0296.JPG': (65.78300, -21.51500),
+    '1000226438.jpg': (65.78200, -21.51600),
+    '1000226951.jpg': (65.70610, -21.66670),
+    'PXL_20261023_214917931.jpg': (64.14032, -21.89969),
+}
+
+# 23 HIGHLIGHT HEROES (Every key milestone & trip climax)
 HERO_SELECTION = {
     # Westfjords & Northern Lights
+    '77033.jpg': ('YOIK Choir on the Strandir Coast', 'Drangsnes • Westfjords'),
     'PXL_20261020_230151948.NIGHT.jpg': ('Northern Lights Curtain', 'Drangsnes • Westfjords'),
     'PXL_20261020_230341065.NIGHT.jpg': ('Emerald Aurora Swirl', 'Drangsnes • Westfjords'),
     'PXL_20261020_230907609.NIGHT.jpg': ('Corona Explosion', 'Drangsnes • Westfjords'),
@@ -31,31 +44,41 @@ HERO_SELECTION = {
     'PXL_20261030_104201790.jpg': ('Glacial Eye Arch Portal', 'Falljökull Ice Cave • Vatnajökull'),
     'PXL_20261030_104911635.jpg': ('Sapphire Ice Chamber', 'Falljökull Ice Cave • Vatnajökull'),
     # South Coast
-    'PXL_20261030_144833807.jpg': ('Eldhraun Moss Lava Fields', 'Eldhraun Lava Field'),
+    'PXL_20261030_144833807.jpg': ('Foss á Síðu River Rapids', 'Kirkjubæjarklaustur • South Coast'),
     'PXL_20261030_163330009.jpg': ('Reynisfjara Black Sand Beach', 'Reynisfjara Beach'),
     'PXL_20261030_173120852.jpg': ('Skógafoss Waterfall', 'Skógar • South Coast'),
     'PXL_20261030_183431300.NIGHT.jpg': ('Seljalandsfoss Night Illumination', 'Seljalandsfoss Waterfall'),
     # Snæfellsnes Peninsula
-    'PXL_20261031_110103448.jpg': ('Kirkjufell Mountain', 'Grundarfjörður • Snæfellsnes'),
+    'PXL_20261031_105933217.jpg': ('Kirkjufell & Kirkjufellsfoss', 'Grundarfjörður • Snæfellsnes'),
     'PXL_20261031_123856453.jpg': ('Djúpalónssandur Beach & Epine Trawler Wreck', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_132850938.jpg': ('Lóndrangar Basalt Pinnacles', 'Lóndrangar • Snæfellsnes'),
     'PXL_20261031_140732367.jpg': ('Gatklettur Natural Sea Arch', 'Arnarstapi Coast'),
     'PXL_20261031_150329519.jpg': ('Búðakirkja Black Church', 'Búðir • Snæfellsnes'),
 }
 
-# CURATED PRUNED JOURNEY (Non-redundant, pure travel signal)
+# CURATED JOURNEY (84 authentic travel & YOIK ensemble photos)
 JOURNEY_ALLOWED = {
+    # Oct 18 - 21: Strandir & Westfjords with YOIK Choir
     'PXL_20261018_085524369.jpg': ('Drangsnes Morning Ocean', 'Drangsnes • Westfjords'),
-    'PXL_20261018_111649700.jpg': ('Drangsnes Canyon Waterfall', 'Drangsnes • Westfjords'),
+    'PXL_20261018_111649700.jpg': ('Drangsnes Coastal Canyon Waterfall', 'Drangsnes • Westfjords'),
+    'IMG_4188.jpeg': ('Weatherproof Hiking Squad', 'Drangsnes Canyon • Westfjords'),
+    '76752.jpg': ('YOIK Rehearsal in Drangsnes', 'Drangsnes • Westfjords'),
+    '77033.jpg': ('YOIK Choir on the Strandir Coast', 'Drangsnes • Westfjords'),
+    '1000226438.jpg': ('Coastal Ridge Walk', 'Drangsnes • Westfjords'),
+    '_DSC0296.JPG': ('Ascending Above Steingrímsfjörður', 'Drangsnes • Westfjords'),
+    '1000226951.jpg': ('Museum of Icelandic Sorcery & Witchcraft', 'Hólmavík • Westfjords'),
     'PXL_20261020_152145792.jpg': ('Hólmavíkurkirkja over Steingrímsfjörður', 'Hólmavík • Westfjords'),
     'PXL_20261020_152435767~2.jpg': ('Strandir Peninsula Arctic Sea Cliffs', 'Strandir Coast • Westfjords'),
     'PXL_20261020_223127604.NIGHT.jpg': ('First Aurora Glow', 'Drangsnes Sky • Westfjords'),
+    '77436.jpg': ('Under the Northern Lights', 'Drangsnes • Westfjords'),
     'PXL_20261020_230151948.NIGHT.jpg': ('Northern Lights Curtain', 'Drangsnes • Westfjords'),
     'PXL_20261020_230341065.NIGHT.jpg': ('Emerald Aurora Swirl', 'Drangsnes • Westfjords'),
     'PXL_20261020_230644730.NIGHT.jpg': ('Aurora Over the Fjord', 'Strandir Coast'),
     'PXL_20261020_230907609.NIGHT.jpg': ('Corona Explosion', 'Drangsnes • Westfjords'),
     'PXL_20261021_081252444.jpg': ('Strandir Valley Autumn Frost', 'Drangsnes • Westfjords'),
     'PXL_20261021_091653823.jpg': ('Mountain Pass Descent', 'Westfjords Mountain Route'),
+
+    # Oct 21: Golden Circle
     'PXL_20261021_134158533.jpg': ('Lake Þingvallavatn Overlook', 'Skálabrekka • Lake Þingvallavatn'),
     'PXL_20261021_150554681.jpg': ('Geysir Geothermal Basin', 'Haukadalur Valley'),
     'PXL_20261021_150901402.jpg': ('Strokkur Eruption', 'Geysir Geothermal Area'),
@@ -63,24 +86,28 @@ JOURNEY_ALLOWED = {
     'PXL_20261021_160006512.jpg': ('Gullfoss Canyon View', 'Gullfoss Canyon'),
     'PXL_20261021_161448972.jpg': ('Gullfoss Golden Waterfall', 'Gullfoss Canyon'),
     'PXL_20261021_161826637~2.jpg': ('Gullfoss Canyon Upper Tier', 'Gullfoss Canyon'),
+
+    # Oct 21 - 26: Reykjavík & Lava Show
     'PXL_20261021_235716125.jpg': ('Hallgrímskirkja Violet Illumination', 'Hallgrímskirkja • Reykjavík'),
-    'PXL_20261022_095104303.jpg': ('Hostel Orchestra & Instrument Silhouettes', 'Reykjavík'),
+    'PXL_20261022_095104303.jpg': ('YOIK Hostel Rehearsal & Orchestra', 'Reykjavík'),
     'PXL_20261022_101624879~2.jpg': ('Hallgrímskirkja Grand Pipe Organ', 'Hallgrímskirkja • Reykjavík'),
     'PXL_20261022_113959206.jpg': ('Harpa Concert Hall Geometric Interior', 'Harpa • Reykjavík Harbor'),
+    '1000089008.jpg': ('The Dark Side of the Rainbow (YOIK)', 'Skólavörðustígur • Reykjavík'),
     'PXL_20261022_215442711.NIGHT.jpg': ('Reykjavík Aurora Borealis Vortex', 'Reykjavík Night Sky'),
-    'PXL_20261024_163848333.jpg': ('Reykjavík Old Harbor & Mt. Esja', 'Reykjavík Waterfront'),
-    'PXL_20261024_231405953.NIGHT.jpg': ('Harbor Aurora Reflection', 'Grótta • Reykjavík'),
+    'PXL_20261023_214917931.jpg': ('YOIK Gathering at RVK Brewing Co.', 'RVK Brewing Co. • Reykjavík'),
     'PXL_20261025_154614300.jpg': ('Historic Corrugated Iron Architecture', 'Reykjavík Downtown'),
-    'PXL_20261026_161203144.jpg': ('Sun Voyager (Sólfar) Sculpture', 'Reykjavík Waterfront'),
-    'PXL_20261026_162737009.jpg': ('Faxaflói Bay Promenade', 'Reykjavík Coast'),
+    'PXL_20261026_161203144.jpg': ('Master of Molten Rock', 'Icelandic Lava Show • Reykjavík'),
+    'PXL_20261026_162737009.jpg': ('Pouring 1100°C Liquid Basalt', 'Icelandic Lava Show • Reykjavík'),
     'PXL_20261026_163647963.jpg': ('Cooling Molten Lava Flow', 'Icelandic Lava Show • Reykjavík'),
+
+    # Oct 27 - 28: DIVE.IS Silfra & Davíðsgjá Combo, and Reykjavík
     'IMG_4552.JPG': ('Descent into Continental Rift', 'Silfra Fissure (Dive 1)'),
     'IMG_4557.JPG': ('Silfra Entry Platform (Tomaso & Werner)', 'Silfra Fissure • Þingvellir'),
     'IMG_4582.JPG': ('Between Two Continents', 'Silfra Fissure (Dive 1)'),
     'IMG_4590.JPG': ('Silfra Hall & Light Beams', 'Silfra Fissure (Dive 1)'),
     'IMG_4616.JPG': ('Silfra Cathedral', 'Silfra Fissure (Dive 1)'),
     'IMG_4645.JPG': ('Silfra Lagoon Ascent', 'Silfra Lagoon (Dive 1)'),
-    'PXL_20261027_130347123.jpg': ('Silfra Dive Preparation & Staging Platform', 'Silfra • Þingvellir'),
+    'PXL_20261027_130347123.jpg': ('Botnssúlur & Mossy Lava Fields', 'Þingvellir National Park'),
     'PXL_20261027_133843596.jpg': ('Lake Þingvallavatn Dive Exit Shoreline', 'Davíðsgjá • Lake Þingvallavatn'),
     'IMG_4686.JPG': ('Davíðsgjá Deep Chasm', 'Davíðsgjá • Lake Þingvallavatn (Dive 2)'),
     'IMG_4711.JPG': ('Davíðsgjá Ascent & Sunburst', 'Davíðsgjá • Lake Þingvallavatn (Dive 2)'),
@@ -89,6 +116,8 @@ JOURNEY_ALLOWED = {
     'PXL_20261028_142124937.jpg': ('Viking Age Silver Hoards & Relics', 'National Museum of Iceland (Þjóðminjasafn)'),
     'PXL_20261028_143748446.jpg': ('Valþjófsstaður Medieval Carved Door', 'National Museum of Iceland (Þjóðminjasafn)'),
     'PXL_20261028_154753043.jpg': ('17th-Century Woodcarvings (Galdramenn)', 'National Museum of Iceland (Þjóðminjasafn Íslands)'),
+
+    # Oct 29: Tröll Expeditions 2-Day South Coast & Glacier Lagoons
     'PXL_20261029_135850683.jpg': ('Diamond on Volcanic Black Sand', 'Diamond Beach'),
     'PXL_20261029_140136936.jpg': ('Black Sand Ice Sculpture', 'Diamond Beach • Breiðamerkursandur'),
     'PXL_20261029_140727046.jpg': ('Diamond Beach Black Shingle & Ice Diamonds', 'Diamond Beach • Breiðamerkursandur'),
@@ -100,11 +129,12 @@ JOURNEY_ALLOWED = {
     'PXL_20261029_162720896.jpg': ('Crystal Cave Tephra Layers & Fluted Ice', 'Vatnajökull Ice Cave'),
     'PXL_20261029_163623608.jpg': ('Glacier Lagoon Calving Ice Wall', 'Fjallsárlón Glacier Lagoon'),
     'PXL_20261029_163826694.jpg': ('Calving Glacier Wall Detail', 'Fjallsárlón Glacier Lagoon'),
+
+    # Oct 30: Tröll Expeditions Falljökull Ice Cave & South Coast Waterfalls
     'PXL_20261030_080318505.jpg': ('Southeast Coast Sunrise', 'Öræfi • Southeast Iceland'),
     'PXL_20261030_093228132.jpg': ('Falljökull Proglacial Outwash Plain', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_094030441.jpg': ('Falljökull Proglacial Lake & Ridge', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_102016214.jpg': ('Glacier Hike Expedition', 'Falljökull • Vatnajökull National Park'),
-    'PXL_20261030_102338388.jpg': ('Ascending Falljökull Lateral Moraine', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_102417128.jpg': ('Falljökull Glacier Crevasse Field', 'Falljökull • Vatnajökull'),
     'PXL_20261030_103618991.jpg': ('Falljökull Ice Cave Portal Entrance', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_104201790.jpg': ('Glacial Eye Arch Portal', 'Falljökull Ice Cave • Vatnajökull'),
@@ -112,18 +142,17 @@ JOURNEY_ALLOWED = {
     'PXL_20261030_104911635.jpg': ('Sapphire Ice Chamber', 'Falljökull Ice Cave • Vatnajökull'),
     'PXL_20261030_111446663.jpg': ('Glacial Moulin & Sapphire Shaft', 'Falljökull Ice Cave • Vatnajökull'),
     'PXL_20261030_113703709.jpg': ('Falljökull Icefall Panoramic Overlook', 'Falljökull • Vatnajökull National Park'),
-    'PXL_20261030_144641655.jpg': ('Eldhraun Vast Moss Lava Field', 'Eldhraun Lava Field'),
-    'PXL_20261030_144833807.jpg': ('Eldhraun Moss Lava Fields', 'Eldhraun Lava Field'),
+    'PXL_20261030_144833807.jpg': ('Foss á Síðu River Rapids', 'Kirkjubæjarklaustur • South Coast'),
     'PXL_20261030_155025285.jpg': ('Vík í Mýrdal Church & Coast', 'Vík í Mýrdal'),
     'PXL_20261030_155507298.jpg': ('Reynisdrangar Sea Stacks from Vík', 'Vík í Mýrdal'),
     'PXL_20261030_163330009.jpg': ('Reynisfjara Black Sand Beach', 'Reynisfjara Beach'),
-    'PXL_20261030_163530113.jpg': ('Hálsanefshellir Basalt Columns', 'Reynisfjara Beach'),
     'PXL_20261030_173120852.jpg': ('Skógafoss Waterfall', 'Skógar • South Coast'),
     'PXL_20261030_174357592.jpg': ('Skógá River Canyon Cascades', 'Skógá River • South Coast'),
     'PXL_20261030_182322356.NIGHT.jpg': ('Cavern Passage Behind Seljalandsfoss', 'Seljalandsfoss Waterfall'),
     'PXL_20261030_183431300.NIGHT.jpg': ('Seljalandsfoss Night Illumination', 'Seljalandsfoss Waterfall'),
-    'PXL_20261031_105933217.jpg': ('Kirkjufell Autumn Reflections', 'Grundarfjörður • Snæfellsnes'),
-    'PXL_20261031_110103448.jpg': ('Kirkjufell Mountain', 'Grundarfjörður • Snæfellsnes'),
+
+    # Oct 31: Tröll Expeditions Snæfellsnes Peninsula Tour & Farewell
+    'PXL_20261031_105933217.jpg': ('Kirkjufell & Kirkjufellsfoss', 'Grundarfjörður • Snæfellsnes'),
     'PXL_20261031_115324149~3.jpg': ('Ingjaldshólskirkja Church', 'Hellissandur • Snæfellsnes'),
     'PXL_20261031_123419469.jpg': ('Djúpalónssandur Black Pebble Cove', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_123856453.jpg': ('Djúpalónssandur Beach & Epine Trawler Wreck', 'Djúpalónssandur • Snæfellsnes'),
@@ -142,11 +171,15 @@ JOURNEY_ALLOWED = {
 }
 
 def dms_to_deg(dms, ref):
-    if not dms: return None
+    if not dms or len(dms) < 3: return None
     try:
-        deg = float(dms[0])
-        minute = float(dms[1])
-        sec = float(dms[2])
+        def to_f(v):
+            if hasattr(v, 'numerator') and hasattr(v, 'denominator'):
+                return float(v.numerator) / float(v.denominator) if v.denominator != 0 else 0.0
+            return float(v)
+        deg = to_f(dms[0])
+        minute = to_f(dms[1])
+        sec = to_f(dms[2])
         dec = deg + minute / 60.0 + sec / 3600.0
         if ref in ['S', 'W']: dec = -dec
         return round(dec, 6)
@@ -167,6 +200,13 @@ def format_date_display(dt_str):
         return dt_str
 
 def find_file(fname):
+    p1 = os.path.join(SOURCE_DIR, fname)
+    if os.path.isfile(p1): return p1
+    p2 = os.path.join(SOURCE_DIR, 'with-me-from-others', fname)
+    if os.path.isfile(p2): return p2
+    for sub in ['Dives', 'Dive 1', 'Dive 2', 'Silfra', 'David']:
+        p3 = os.path.join(SOURCE_DIR, sub, fname)
+        if os.path.isfile(p3): return p3
     for root, dirs, files in os.walk(SOURCE_DIR):
         if fname in files:
             return os.path.join(root, fname)
@@ -194,31 +234,33 @@ def build():
         shutil.copy2(src_path, full_dest)
 
         img = Image.open(src_path)
-        w, h = img.size
         exif = img.getexif()
         exif_ifd = exif.get_ifd(0x8769) if exif else None
         gps_ifd = exif.get_ifd(0x8825) if exif else None
         dt_str = (exif_ifd.get(36867) or exif_ifd.get(36868) or exif.get(306)) if exif_ifd else exif.get(306)
 
-        # Thumbnail
+        # Thumbnail with correct EXIF orientation
         thumb_img = ImageOps.exif_transpose(img)
+        w, h = thumb_img.size
         thumb_img.thumbnail((720, 720), Image.Resampling.LANCZOS)
         if thumb_img.mode in ('RGBA', 'P'):
             thumb_img = thumb_img.convert('RGB')
         thumb_img.save(thumb_dest, 'JPEG', quality=84, optimize=True)
 
-        # GPS
+        # GPS coordinates
         lat = lon = None
         if gps_ifd:
             lat = dms_to_deg(gps_ifd.get(2), gps_ifd.get(1))
             lon = dms_to_deg(gps_ifd.get(4), gps_ifd.get(3))
 
-        # True dive anchors
-        if lat is None:
+        # True dive & location fallbacks
+        if lat is None or lon is None:
             if 'Silfra' in place:
                 lat, lon = COORDS_SILFRA
             elif 'Davíðsgjá' in place or 'David' in place:
                 lat, lon = COORDS_DAVID
+            elif fname in FALLBACK_COORDS:
+                lat, lon = FALLBACK_COORDS[fname]
 
         is_hero = fname in HERO_SELECTION
 
