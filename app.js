@@ -126,8 +126,10 @@ function unhighlightMarker(fname) {
 
 function scrollToCard(fname) {
   const card = document.getElementById(`card-${fname}`);
-  if (card) {
-    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const scrollContainer = document.querySelector('.gallery-scroll');
+  if (card && scrollContainer) {
+    const cardTop = card.offsetTop - scrollContainer.offsetTop;
+    scrollContainer.scrollTo({ top: Math.max(0, cardTop - 14), behavior: 'smooth' });
     card.classList.add('highlighted');
     setTimeout(() => card.classList.remove('highlighted'), 1500);
   }
@@ -290,21 +292,44 @@ function initEvents() {
     }
   }, { passive: true });
 
-  // Mobile Touch Swipe
+  // Mobile Touch Gestures (Swipe Left/Right = Browse, Swipe Down = Close)
   let touchStartX = 0;
+  let touchStartY = 0;
   lightbox.addEventListener('touchstart', (e) => {
-    if (e.touches && e.touches.length === 1) touchStartX = e.touches[0].clientX;
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
   }, { passive: true });
 
   lightbox.addEventListener('touchend', (e) => {
     if (e.changedTouches && e.changedTouches.length === 1) {
       const diffX = e.changedTouches[0].clientX - touchStartX;
-      if (Math.abs(diffX) > 40) {
+      const diffY = e.changedTouches[0].clientY - touchStartY;
+
+      // Swipe down to close lightbox
+      if (diffY > 60 && Math.abs(diffX) < 70) {
+        closeLightbox();
+        return;
+      }
+
+      // Swipe horizontal to browse photos
+      if (Math.abs(diffX) > 40 && Math.abs(diffY) < 60) {
         if (diffX < 0) nextPhoto();
         else prevPhoto();
       }
     }
   }, { passive: true });
+
+  // Tap gallery header title to scroll back to top / map
+  const titleWrap = document.querySelector('.gallery-title-wrap');
+  if (titleWrap) {
+    titleWrap.style.cursor = 'pointer';
+    titleWrap.addEventListener('click', () => {
+      const scrollContainer = document.querySelector('.gallery-scroll');
+      if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   // Keyboard & TV Remote
   window.addEventListener('keydown', (e) => {
