@@ -74,10 +74,19 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Map Markers */
-.custom-pin {
-  width: 13px;
-  height: 13px;
+/* Map Markers (Container positioned by Leaflet translate3d) */
+.pin-marker {
+  background: transparent !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner Dot (Scaled and styled safely without touching translate3d) */
+.pin-dot {
+  width: 12px;
+  height: 12px;
   background: var(--accent);
   border: 2px solid #fff;
   border-radius: 50%;
@@ -86,12 +95,15 @@ body {
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s, box-shadow 0.25s;
 }
 
-.custom-pin.active {
+.pin-marker.active {
+  z-index: 9999 !important;
+}
+
+.pin-marker.active .pin-dot {
   background: #facc15 !important; /* Radiant gold/yellow */
   border-color: #ffffff !important;
   box-shadow: 0 0 14px #facc15, 0 0 28px rgba(250, 204, 21, 0.9) !important;
-  transform: scale(2.0) !important;
-  z-index: 9999 !important;
+  transform: scale(1.85);
 }
 
 .flag-icon {

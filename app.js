@@ -92,9 +92,10 @@ function updateMapMarkers() {
   coordGroups.forEach((group) => {
     const p = group[0];
     const icon = L.divIcon({
-      className: 'custom-pin',
-      iconSize: [13, 13],
-      iconAnchor: [6, 6]
+      className: 'pin-marker',
+      html: '<div class="pin-dot"></div>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
     });
 
     const marker = L.marker([p.lat, p.lon], { icon }).addTo(markersLayer);
