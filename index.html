@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iceland 2026</title>
+  <meta name="description" content="Iceland 2026: Curated highlights and full journey across Westfjords, Vatnajökull, and Snæfellsnes.">
+  <meta property="og:title" content="Iceland 2026">
+  <meta property="og:description" content="Curated photo journey and route map across Iceland.">
+  <meta property="og:image" content="thumbs/PXL_20261020_230151948.NIGHT.jpg">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇮🇸</text></svg>">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- LEFT: Interactive Satellite Map -->
+    <section class="map-pane" aria-label="Route Map">
+      <div id="map"></div>
+      
+      <div class="map-hud-pill">
+        <span class="flag">🇮🇸</span>
+        <span class="hud-title">Iceland 2026</span>
+      </div>
+    </section>
+
+    <!-- RIGHT: Photo Feed -->
+    <main class="gallery-pane" aria-label="Photos">
+      
+      <header class="gallery-header">
+        <div class="view-switch">
+          <button class="switch-btn active" data-view="highlights" id="btn-highlights">
+            ★ Highlights (22)
+          </button>
+          <button class="switch-btn" data-view="all" id="btn-all">
+            Full Journey (58)
+          </button>
+        </div>
+
+        <div class="header-right">
+          <div class="nav-shortcuts">
+            <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> Browse • <kbd>F</kbd> TV Mode
+          </div>
+        </div>
+      </header>
+
+      <div class="gallery-scroll">
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- SoTA FULLSCREEN LIGHTBOX (Pure Photo on Black, Zero Noise) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    
+    <!-- Edge-to-Edge Image -->
+    <div class="lightbox-stage">
+      <img class="lightbox-img" id="lb-img" src="" alt="Fullscreen Iceland photo" />
+    </div>
+
+    <!-- Invisible Touch Zones (Browse & Toggle) -->
+    <div class="touch-zone touch-prev" id="zone-prev" title="Previous photo (← / A)"></div>
+    <div class="touch-zone touch-center" id="zone-center" title="Toggle caption (Space / Tap)"></div>
+    <div class="touch-zone touch-next" id="zone-next" title="Next photo (→ / D)"></div>
+
+    <!-- Minimal Essential Caption (Auto-fades after 2.5s, toggled with Space / tap) -->
+    <div class="lightbox-caption" id="lb-caption">
+      <div class="cap-title" id="cap-title"></div>
+      <div class="cap-sub" id="cap-sub"></div>
+    </div>
+
+    <!-- Top Corner Controls (Autohides with caption) -->
+    <div class="lightbox-top-actions">
+      <button class="icon-btn" id="btn-lb-fs" title="True Fullscreen (F)">⛶</button>
+      <button class="icon-btn btn-close" id="btn-lb-close" title="Exit Fullscreen (Esc)">✕</button>
+    </div>
+
+  </div>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>

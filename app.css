@@ -1,0 +1,428 @@
+:root {
+  --bg-deep: #07090e;
+  --bg-surface: #0e131b;
+  --bg-card: #131924;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #00f0ff;
+  --gold: #facc15;
+  --text: #f8fafc;
+  --text-dim: #94a3b8;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-deep);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* =========================================
+   MAP PANE (LEFT)
+========================================= */
+.map-pane {
+  flex: 0 0 44%;
+  height: 100%;
+  position: relative;
+  background: #000;
+  border-right: 1px solid var(--border);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  background: #05080c;
+}
+
+.map-hud-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1000;
+  background: rgba(14, 19, 27, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.map-hud-pill .flag {
+  font-size: 1.1rem;
+}
+
+.map-hud-pill .hud-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+/* Map Markers */
+.custom-pin {
+  width: 13px;
+  height: 13px;
+  background: var(--accent);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-pin.is-hero {
+  background: var(--gold);
+  width: 17px;
+  height: 17px;
+  box-shadow: 0 0 14px var(--gold);
+}
+
+.custom-pin.active {
+  transform: scale(1.6);
+  border-color: #fff;
+  box-shadow: 0 0 24px #fff;
+  z-index: 9999 !important;
+}
+
+/* =========================================
+   GALLERY PANE (RIGHT)
+========================================= */
+.gallery-pane {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-deep);
+}
+
+.gallery-header {
+  padding: 12px 20px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.view-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.switch-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.switch-btn:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.switch-btn.active {
+  background: rgba(0, 240, 255, 0.14);
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+.nav-shortcuts {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+}
+
+.nav-shortcuts kbd {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+}
+
+/* Photo Grid */
+.gallery-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  scroll-behavior: smooth;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.photo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-card:hover, .photo-card:focus {
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(0, 240, 255, 0.25);
+  outline: none;
+}
+
+.photo-card.highlighted {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+.card-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover .card-thumb {
+  transform: scale(1.05);
+}
+
+.card-star {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(250, 204, 21, 0.95);
+  color: #000;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.card-caption {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-sub {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-place {
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   SoTA REAL FULLSCREEN LIGHTBOX
+   (100vw x 100vh, Pure Photo, Zero Noise)
+========================================= */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  user-select: none;
+  display: block;
+  background: #000;
+}
+
+/* Invisible Touch & Click Zones */
+.touch-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.touch-prev {
+  left: 0;
+  width: 25vw;
+}
+
+.touch-center {
+  left: 25vw;
+  width: 50vw;
+}
+
+.touch-next {
+  right: 0;
+  width: 25vw;
+}
+
+/* Minimalist Essential Caption (No Camera/ISO Noise) */
+.lightbox-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(8, 12, 18, 0.78);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 22px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 20;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-width: 85vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-caption.hidden {
+  opacity: 0;
+  transform: translate(-50%, 14px);
+}
+
+.cap-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.cap-sub {
+  font-size: 0.76rem;
+  color: var(--accent);
+  margin-top: 2px;
+}
+
+/* Subtle Top Controls (Autohides on idle) */
+.lightbox-top-actions {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  display: flex;
+  gap: 10px;
+  z-index: 30;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-top-actions.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.icon-btn {
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.08);
+}
+
+.icon-btn.btn-close:hover {
+  background: rgba(239, 68, 68, 0.4);
+}
+
+/* Mobile Layout */
+@media (max-width: 850px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .map-pane {
+    flex: 0 0 35vh;
+    border-right: none;
+  }
+}
