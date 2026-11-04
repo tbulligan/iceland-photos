@@ -13,30 +13,17 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261018_113935025.jpg",
-    "title": "Steingr\u00edmsfj\u00f6r\u00f0ur Coast",
-    "place": "Westfjords Coastal Route",
-    "is_hero": false,
-    "datetime": "2026:10:18 11:39:35",
-    "date_display": "Oct 18 \u2022 11:39",
-    "lat": 65.78585,
-    "lon": -21.499694,
-    "thumb": "thumbs/PXL_20261018_113935025.jpg",
-    "src": "photos/PXL_20261018_113935025.jpg",
-    "aspect": 1.778
-  },
-  {
-    "filename": "PXL_20261019_153620980.jpg",
-    "title": "H\u00f3lmav\u00edk Fjord",
-    "place": "H\u00f3lmav\u00edk \u2022 Westfjords",
-    "is_hero": false,
-    "datetime": "2026:10:19 15:36:20",
-    "date_display": "Oct 19 \u2022 15:36",
-    "lat": 65.6901,
-    "lon": -21.441861,
-    "thumb": "thumbs/PXL_20261019_153620980.jpg",
-    "src": "photos/PXL_20261019_153620980.jpg",
-    "aspect": 1.778
+    "filename": "PXL_20261018_111649700.jpg",
+    "title": "Drangsnes Canyon Waterfall",
+    "place": "Drangsnes \u2022 Westfjords",
+    "is_hero": true,
+    "datetime": "2026:10:18 11:16:49",
+    "date_display": "Oct 18 \u2022 11:16",
+    "lat": 65.782294,
+    "lon": -21.499883,
+    "thumb": "thumbs/PXL_20261018_111649700.jpg",
+    "src": "photos/PXL_20261018_111649700.jpg",
+    "aspect": 0.562
   },
   {
     "filename": "PXL_20261020_152145792.jpg",
@@ -195,6 +182,32 @@
     "aspect": 1.778
   },
   {
+    "filename": "PXL_20261021_235716125.jpg",
+    "title": "Hallgr\u00edmskirkja Violet Illumination",
+    "place": "Hallgr\u00edmskirkja \u2022 Reykjav\u00edk",
+    "is_hero": true,
+    "datetime": "2026:10:21 23:57:16",
+    "date_display": "Oct 21 \u2022 23:57",
+    "lat": 64.142547,
+    "lon": -21.927531,
+    "thumb": "thumbs/PXL_20261021_235716125.jpg",
+    "src": "photos/PXL_20261021_235716125.jpg",
+    "aspect": 0.562
+  },
+  {
+    "filename": "PXL_20261022_095104303.jpg",
+    "title": "Hostel Orchestra & Instrument Silhouettes",
+    "place": "Reykjav\u00edk",
+    "is_hero": false,
+    "datetime": "2026:10:22 09:51:04",
+    "date_display": "Oct 22 \u2022 09:51",
+    "lat": 64.140983,
+    "lon": -21.921997,
+    "thumb": "thumbs/PXL_20261022_095104303.jpg",
+    "src": "photos/PXL_20261022_095104303.jpg",
+    "aspect": 1.779
+  },
+  {
     "filename": "PXL_20261022_101624879~2.jpg",
     "title": "Hallgr\u00edmskirkja Grand Pipe Organ",
     "place": "Hallgr\u00edmskirkja \u2022 Reykjav\u00edk",
@@ -261,8 +274,8 @@
   },
   {
     "filename": "IMG_4557.JPG",
-    "title": "Glacial Water 100m Visibility",
-    "place": "Silfra Fissure (Dive 1)",
+    "title": "Silfra Entry Platform (Tomaso & Werner)",
+    "place": "Silfra Fissure \u2022 \u00deingvellir",
     "is_hero": false,
     "datetime": "2026:10:27 11:41:43",
     "date_display": "Oct 27 \u2022 11:41",
@@ -338,6 +351,19 @@
     "aspect": 1.5
   },
   {
+    "filename": "PXL_20261027_212539717.jpg",
+    "title": "RVK Brewing Co. Happy Hour",
+    "place": "RVK Brewing Co. \u2022 Reykjav\u00edk",
+    "is_hero": false,
+    "datetime": "2026:10:27 21:25:39",
+    "date_display": "Oct 27 \u2022 21:25",
+    "lat": 64.140317,
+    "lon": -21.899697,
+    "thumb": "thumbs/PXL_20261027_212539717.jpg",
+    "src": "photos/PXL_20261027_212539717.jpg",
+    "aspect": 1.778
+  },
+  {
     "filename": "PXL_20261028_154753043.jpg",
     "title": "17th-Century Woodcarvings (Galdramenn)",
     "place": "National Museum of Iceland (\u00dej\u00f3\u00f0minjasafn \u00cdslands)",
@@ -365,8 +391,8 @@
   },
   {
     "filename": "PXL_20261029_140727046.jpg",
-    "title": "Glacial Ice Waves",
-    "place": "Diamond Beach",
+    "title": "Diamond Beach Black Shingle & Ice Diamonds",
+    "place": "Diamond Beach \u2022 Brei\u00f0amerkursandur",
     "is_hero": false,
     "datetime": "2026:10:29 14:07:27",
     "date_display": "Oct 29 \u2022 14:07",
@@ -595,32 +621,6 @@
     "lon": -19.510739,
     "thumb": "thumbs/PXL_20261030_173120852.jpg",
     "src": "photos/PXL_20261030_173120852.jpg",
-    "aspect": 0.562
-  },
-  {
-    "filename": "PXL_20261030_174357592.jpg",
-    "title": "Sk\u00f3ga River Canyon",
-    "place": "Sk\u00f3g\u00e1 River",
-    "is_hero": false,
-    "datetime": "2026:10:30 17:43:57",
-    "date_display": "Oct 30 \u2022 17:43",
-    "lat": 63.531158,
-    "lon": -19.512106,
-    "thumb": "thumbs/PXL_20261030_174357592.jpg",
-    "src": "photos/PXL_20261030_174357592.jpg",
-    "aspect": 0.562
-  },
-  {
-    "filename": "PXL_20261030_182033427.NIGHT.jpg",
-    "title": "Seljalandsfoss Evening Mist",
-    "place": "Seljalandsfoss Waterfall",
-    "is_hero": false,
-    "datetime": "2026:10:30 18:20:33",
-    "date_display": "Oct 30 \u2022 18:20",
-    "lat": 63.615533,
-    "lon": -19.989403,
-    "thumb": "thumbs/PXL_20261030_182033427.NIGHT.jpg",
-    "src": "photos/PXL_20261030_182033427.NIGHT.jpg",
     "aspect": 0.562
   },
   {
