@@ -131,7 +131,7 @@ JOURNEY_ALLOWED = {
     # Oct 29: Tröll Expeditions 2-Day South Coast & Glacier Lagoons
     'PXL_20261029_135850683.jpg': ('Diamond on Volcanic Black Sand', 'Diamond Beach'),
     'PXL_20261029_142643385.jpg': ('Jökulsárlón Tidal Channel', 'Jökulsárlón Outlet'),
-    'PXL_20261029_143709427.jpg': ('Tomaso at Jökulsárlón Lagoon', 'Jökulsárlón Glacier Lagoon'),
+    'PXL_20261029_143709427.jpg': ('At Jökulsárlón Lagoon', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_144743380.jpg': ('Sculpted Blue Iceberg Arch', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_162106798.jpg': ('Crystal Ice Cave Subterranean River', 'Crystal Ice Cave • Breiðamerkurjökull'),
     'PXL_20261029_162555366.jpg': ('Crystal Ice Cave Cathedral Portal', 'Crystal Ice Cave • Breiðamerkurjökull'),
