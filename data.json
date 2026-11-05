@@ -754,19 +754,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261029_143709427.jpg",
-    "title": "At Jökulsárlón Lagoon",
-    "place": "Jökulsárlón Glacier Lagoon",
-    "is_hero": false,
-    "datetime": "2026:10:29 14:37:09",
-    "date_display": "Oct 29 • 14:37",
-    "lat": 64.048367,
-    "lon": -16.181042,
-    "thumb": "thumbs/PXL_20261029_143709427.jpg",
-    "src": "photos/PXL_20261029_143709427.jpg",
-    "aspect": 0.562
-  },
-  {
     "filename": "PXL_20261029_144743380.jpg",
     "title": "Sculpted Blue Iceberg Arch",
     "place": "Jökulsárlón Glacier Lagoon",
@@ -1154,6 +1141,19 @@
     "lon": -23.899347,
     "thumb": "thumbs/PXL_20261031_124528772.jpg",
     "src": "photos/PXL_20261031_124528772.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261031_124833938.jpg",
+    "title": "Djúpalónssandur Volcanic Monoliths",
+    "place": "Djúpalónssandur • Snæfellsnes",
+    "is_hero": false,
+    "datetime": "2026:10:31 12:48:33",
+    "date_display": "Oct 31 • 12:48",
+    "lat": 64.753033,
+    "lon": -23.899272,
+    "thumb": "thumbs/PXL_20261031_124833938.jpg",
+    "src": "photos/PXL_20261031_124833938.jpg",
     "aspect": 1.778
   },
   {

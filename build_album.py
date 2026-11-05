@@ -131,7 +131,6 @@ JOURNEY_ALLOWED = {
     # Oct 29: Tröll Expeditions 2-Day South Coast & Glacier Lagoons
     'PXL_20261029_135850683.jpg': ('Diamond on Volcanic Black Sand', 'Diamond Beach'),
     'PXL_20261029_142643385.jpg': ('Jökulsárlón Tidal Channel', 'Jökulsárlón Outlet'),
-    'PXL_20261029_143709427.jpg': ('At Jökulsárlón Lagoon', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_144743380.jpg': ('Sculpted Blue Iceberg Arch', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_162106798.jpg': ('Crystal Ice Cave Subterranean River', 'Crystal Ice Cave • Breiðamerkurjökull'),
     'PXL_20261029_162555366.jpg': ('Crystal Ice Cave Cathedral Portal', 'Crystal Ice Cave • Breiðamerkurjökull'),
@@ -166,6 +165,7 @@ JOURNEY_ALLOWED = {
     'PXL_20261031_123419469.jpg': ('Djúpalónssandur Black Pebble Cove', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_123856453.jpg': ('Djúpalónssandur Beach & Epine Trawler Wreck', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_124528772.jpg': ('Djúpalónssandur Sea Stacks & Sunburst', 'Djúpalónssandur • Snæfellsnes'),
+    'PXL_20261031_124833938.jpg': ('Djúpalónssandur Volcanic Monoliths', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_130448667.jpg': ('Embracing the Elements at Djúpalónssandur', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_132850938.jpg': ('Lóndrangar Basalt Pinnacles', 'Lóndrangar • Snæfellsnes'),
     'PXL_20261031_133314715.jpg': ('Lóndrangar Ocean Promontory & Rain Squall', 'Lóndrangar • Snæfellsnes'),
