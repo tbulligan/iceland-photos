@@ -1,7 +1,20 @@
 [
   {
+    "filename": "50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "title": "Emma: Host, Former Flatmate & Adventure Benefactor",
+    "place": "Reykjavík",
+    "is_hero": false,
+    "datetime": "2026:10:18 07:30:00",
+    "date_display": "Oct 18 • 07:30",
+    "lat": 64.145,
+    "lon": -21.93,
+    "thumb": "thumbs/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "src": "photos/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "aspect": 0.562
+  },
+  {
     "filename": "PXL_20261018_085524369.jpg",
-    "title": "Drangsnes Morning Ocean",
+    "title": "Steingrímsfjörður Valley Sunrise & Turf Shed",
     "place": "Drangsnes • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:18 08:55:24",
@@ -71,8 +84,8 @@
     "is_hero": false,
     "datetime": "2026:10:19 15:18:31",
     "date_display": "Oct 19 • 15:18",
-    "lat": 0.0,
-    "lon": 0.0,
+    "lat": 65.782,
+    "lon": -21.516,
     "thumb": "thumbs/1000226438.jpg",
     "src": "photos/1000226438.jpg",
     "aspect": 1.333
@@ -91,17 +104,43 @@
     "aspect": 1.5
   },
   {
+    "filename": "IMG_5644.jpeg",
+    "title": "Drangsnes Geothermal Hot Tubs with YOIK",
+    "place": "Drangsnes • Westfjords",
+    "is_hero": false,
+    "datetime": "2026:10:19 16:47:34",
+    "date_display": "Oct 19 • 16:47",
+    "lat": 65.6883,
+    "lon": -21.448336,
+    "thumb": "thumbs/IMG_5644.jpg",
+    "src": "photos/IMG_5644.jpg",
+    "aspect": 1.288
+  },
+  {
     "filename": "1000226951.jpg",
     "title": "Museum of Icelandic Sorcery & Witchcraft",
     "place": "Hólmavík • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:20 14:56:41",
     "date_display": "Oct 20 • 14:56",
-    "lat": 0.0,
-    "lon": 0.0,
+    "lat": 65.7061,
+    "lon": -21.6667,
     "thumb": "thumbs/1000226951.jpg",
     "src": "photos/1000226951.jpg",
     "aspect": 1.333
+  },
+  {
+    "filename": "PXL_20261020_145812108.jpg",
+    "title": "The Tilberi (Icelandic Sorcery Creature)",
+    "place": "Museum of Witchcraft • Hólmavík",
+    "is_hero": false,
+    "datetime": "2026:10:20 14:58:12",
+    "date_display": "Oct 20 • 14:58",
+    "lat": 65.706578,
+    "lon": -21.665456,
+    "thumb": "thumbs/PXL_20261020_145812108.jpg",
+    "src": "photos/PXL_20261020_145812108.jpg",
+    "aspect": 0.562
   },
   {
     "filename": "PXL_20261020_152145792.jpg",
@@ -118,7 +157,7 @@
   },
   {
     "filename": "PXL_20261020_152435767~2.jpg",
-    "title": "Strandir Peninsula Arctic Sea Cliffs",
+    "title": "Strandir Coast Sea Cliffs",
     "place": "Strandir Coast • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:20 15:24:35",
@@ -273,19 +312,6 @@
     "aspect": 0.562
   },
   {
-    "filename": "PXL_20261021_151106273.jpg",
-    "title": "Strokkur Boiling Vent & Steam Plume",
-    "place": "Geysir Geothermal Area",
-    "is_hero": false,
-    "datetime": "2026:10:21 15:11:06",
-    "date_display": "Oct 21 • 15:11",
-    "lat": 64.313325,
-    "lon": -20.299933,
-    "thumb": "thumbs/PXL_20261021_151106273.jpg",
-    "src": "photos/PXL_20261021_151106273.jpg",
-    "aspect": 0.562
-  },
-  {
     "filename": "PXL_20261021_160006512.jpg",
     "title": "Gullfoss Canyon View",
     "place": "Gullfoss Canyon",
@@ -312,19 +338,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261021_161826637~2.jpg",
-    "title": "Gullfoss Canyon Upper Tier",
-    "place": "Gullfoss Canyon",
-    "is_hero": false,
-    "datetime": "2026:10:21 16:18:26",
-    "date_display": "Oct 21 • 16:18",
-    "lat": 64.327008,
-    "lon": -20.121858,
-    "thumb": "thumbs/PXL_20261021_161826637~2.jpg",
-    "src": "photos/PXL_20261021_161826637~2.jpg",
-    "aspect": 1.778
-  },
-  {
     "filename": "PXL_20261021_235716125.jpg",
     "title": "Hallgrímskirkja Violet Illumination",
     "place": "Hallgrímskirkja • Reykjavík",
@@ -339,7 +352,7 @@
   },
   {
     "filename": "PXL_20261022_095104303.jpg",
-    "title": "YOIK Hostel Rehearsal & Orchestra",
+    "title": "B47 Hostel Orchestra",
     "place": "Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:22 09:51:04",
@@ -378,7 +391,7 @@
   },
   {
     "filename": "1000089008.jpg",
-    "title": "The Dark Side of the Rainbow (YOIK)",
+    "title": "The YOIK Side of the Moon",
     "place": "Skólavörðustígur • Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:22 12:49:56",
@@ -404,7 +417,7 @@
   },
   {
     "filename": "PXL_20261023_214917931.jpg",
-    "title": "YOIK Gathering at RVK Brewing Co.",
+    "title": "YOIK-Huldur Gathering at RVK Brewing Co.",
     "place": "RVK Brewing Co. • Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:23 21:49:17",
@@ -417,8 +430,8 @@
   },
   {
     "filename": "PXL_20261025_154614300.jpg",
-    "title": "Historic Corrugated Iron Architecture",
-    "place": "Reykjavík Downtown",
+    "title": "Fríkirkjan í Reykjavík by the Tjörnin",
+    "place": "Tjörnin • Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:25 15:46:14",
     "date_display": "Oct 25 • 15:46",
@@ -426,6 +439,32 @@
     "lon": -21.943736,
     "thumb": "thumbs/PXL_20261025_154614300.jpg",
     "src": "photos/PXL_20261025_154614300.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261025_185719775.jpg",
+    "title": "Salted Liquorice & Rye Bread Ice Cream",
+    "place": "Valdís • Grandi • Reykjavík",
+    "is_hero": false,
+    "datetime": "2026:10:25 18:57:19",
+    "date_display": "Oct 25 • 18:57",
+    "lat": 64.144678,
+    "lon": -21.925497,
+    "thumb": "thumbs/PXL_20261025_185719775.jpg",
+    "src": "photos/PXL_20261025_185719775.jpg",
+    "aspect": 0.562
+  },
+  {
+    "filename": "PXL_20261025_215951062.jpg",
+    "title": "Hostile Takeover by Cats Sofía & Friðurfinnari",
+    "place": "Reykjavík",
+    "is_hero": false,
+    "datetime": "2026:10:25 21:59:51",
+    "date_display": "Oct 25 • 21:59",
+    "lat": 64.145006,
+    "lon": -21.892714,
+    "thumb": "thumbs/PXL_20261025_215951062.jpg",
+    "src": "photos/PXL_20261025_215951062.jpg",
     "aspect": 1.778
   },
   {
@@ -547,7 +586,7 @@
   },
   {
     "filename": "PXL_20261027_130347123.jpg",
-    "title": "Botnssúlur & Mossy Lava Fields",
+    "title": "Langjökull Glacial Source & Mossy Lava Fields",
     "place": "Þingvellir National Park",
     "is_hero": false,
     "datetime": "2026:10:27 13:03:47",
@@ -556,19 +595,6 @@
     "lon": -21.116581,
     "thumb": "thumbs/PXL_20261027_130347123.jpg",
     "src": "photos/PXL_20261027_130347123.jpg",
-    "aspect": 1.778
-  },
-  {
-    "filename": "PXL_20261027_133843596.jpg",
-    "title": "Lake Þingvallavatn Dive Exit Shoreline",
-    "place": "Davíðsgjá • Lake Þingvallavatn",
-    "is_hero": false,
-    "datetime": "2026:10:27 13:38:43",
-    "date_display": "Oct 27 • 13:38",
-    "lat": 64.236153,
-    "lon": -21.044811,
-    "thumb": "thumbs/PXL_20261027_133843596.jpg",
-    "src": "photos/PXL_20261027_133843596.jpg",
     "aspect": 1.778
   },
   {
@@ -586,7 +612,7 @@
   },
   {
     "filename": "IMG_4711.JPG",
-    "title": "Davíðsgjá Ascent & Sunburst",
+    "title": "Davíðsgjá Basalt Fissure Hover",
     "place": "Davíðsgjá • Lake Þingvallavatn (Dive 2)",
     "is_hero": false,
     "datetime": "2023:11:03 14:37:01",
@@ -596,6 +622,19 @@
     "thumb": "thumbs/IMG_4711.jpg",
     "src": "photos/IMG_4711.jpg",
     "aspect": 1.5
+  },
+  {
+    "filename": "PXL_20261027_151157243.jpg",
+    "title": "Post-Dive Trio: Alex, Werner & Tomaso",
+    "place": "Davíðsgjá • Lake Þingvallavatn",
+    "is_hero": false,
+    "datetime": "2026:10:27 15:11:57",
+    "date_display": "Oct 27 • 15:11",
+    "lat": 64.236172,
+    "lon": -21.044931,
+    "thumb": "thumbs/PXL_20261027_151157243.jpg",
+    "src": "photos/PXL_20261027_151157243.jpg",
+    "aspect": 1.778
   },
   {
     "filename": "PXL_20261027_212539717.jpg",
@@ -612,8 +651,8 @@
   },
   {
     "filename": "PXL_20261028_122746447.jpg",
-    "title": "Tjörnin Lake Autumn Promenade",
-    "place": "Tjörnin • Reykjavík",
+    "title": "Rainbow over Faxaflói Bay and Mount Esja",
+    "place": "Sóltún • Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:28 12:27:46",
     "date_display": "Oct 28 • 12:27",
@@ -625,8 +664,8 @@
   },
   {
     "filename": "PXL_20261028_142124937.jpg",
-    "title": "Viking Age Silver Hoards & Relics",
-    "place": "National Museum of Iceland (Þjóðminjasafn)",
+    "title": "Medieval Stave Church Carved Pillar",
+    "place": "National Museum of Iceland",
     "is_hero": false,
     "datetime": "2026:10:28 14:21:24",
     "date_display": "Oct 28 • 14:21",
@@ -638,8 +677,8 @@
   },
   {
     "filename": "PXL_20261028_143748446.jpg",
-    "title": "Valþjófsstaður Medieval Carved Door",
-    "place": "National Museum of Iceland (Þjóðminjasafn)",
+    "title": "Valþjófsstaður Medieval Carved Chest",
+    "place": "National Museum of Iceland",
     "is_hero": false,
     "datetime": "2026:10:28 14:37:48",
     "date_display": "Oct 28 • 14:37",
@@ -660,6 +699,32 @@
     "lon": -21.948336,
     "thumb": "thumbs/PXL_20261028_154753043.jpg",
     "src": "photos/PXL_20261028_154753043.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261028_175708712.jpg",
+    "title": "Sun Voyager (Sólfar) under the Moon",
+    "place": "Sæbraut • Reykjavík",
+    "is_hero": false,
+    "datetime": "2026:10:28 17:57:08",
+    "date_display": "Oct 28 • 17:57",
+    "lat": 64.147511,
+    "lon": -21.922567,
+    "thumb": "thumbs/PXL_20261028_175708712.jpg",
+    "src": "photos/PXL_20261028_175708712.jpg",
+    "aspect": 1.778
+  },
+  {
+    "filename": "PXL_20261028_181128651.jpg",
+    "title": "Reykjavík Harbour Yellow Lighthouse",
+    "place": "Reykjavík Harbour",
+    "is_hero": false,
+    "datetime": "2026:10:28 18:11:28",
+    "date_display": "Oct 28 • 18:11",
+    "lat": 64.147172,
+    "lon": -21.905686,
+    "thumb": "thumbs/PXL_20261028_181128651.jpg",
+    "src": "photos/PXL_20261028_181128651.jpg",
     "aspect": 1.778
   },
   {
@@ -689,19 +754,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261029_140727046.jpg",
-    "title": "Diamond Beach Black Shingle & Ice Diamonds",
-    "place": "Diamond Beach • Breiðamerkursandur",
-    "is_hero": false,
-    "datetime": "2026:10:29 14:07:27",
-    "date_display": "Oct 29 • 14:07",
-    "lat": 64.042908,
-    "lon": -16.175964,
-    "thumb": "thumbs/PXL_20261029_140727046.jpg",
-    "src": "photos/PXL_20261029_140727046.jpg",
-    "aspect": 1.778
-  },
-  {
     "filename": "PXL_20261029_142643385.jpg",
     "title": "Jökulsárlón Tidal Channel",
     "place": "Jökulsárlón Outlet",
@@ -716,7 +768,7 @@
   },
   {
     "filename": "PXL_20261029_144151472.jpg",
-    "title": "Sculpted Blue Iceberg Arches",
+    "title": "Floating Icebergs of Jökulsárlón",
     "place": "Jökulsárlón Glacier Lagoon",
     "is_hero": false,
     "datetime": "2026:10:29 14:41:51",
@@ -729,7 +781,7 @@
   },
   {
     "filename": "PXL_20261029_144743380.jpg",
-    "title": "Floating Icebergs of Jökulsárlón",
+    "title": "Sculpted Blue Iceberg Arch",
     "place": "Jökulsárlón Glacier Lagoon",
     "is_hero": true,
     "datetime": "2026:10:29 14:47:43",
@@ -742,8 +794,8 @@
   },
   {
     "filename": "PXL_20261029_162106798.jpg",
-    "title": "Fjallsárlón Glacier Tongue & Terminal Lake",
-    "place": "Fjallsárlón Glacier Lagoon",
+    "title": "Crystal Ice Cave Subterranean River",
+    "place": "Crystal Ice Cave • Breiðamerkurjökull",
     "is_hero": false,
     "datetime": "2026:10:29 16:21:06",
     "date_display": "Oct 29 • 16:21",
@@ -755,8 +807,8 @@
   },
   {
     "filename": "PXL_20261029_162555366.jpg",
-    "title": "Glacial Meltwater Arch & Tunnel",
-    "place": "En Route to Crystal Ice Cave • Vatnajökull",
+    "title": "Crystal Ice Cave Cathedral Portal",
+    "place": "Crystal Ice Cave • Breiðamerkurjökull",
     "is_hero": false,
     "datetime": "2026:10:29 16:25:55",
     "date_display": "Oct 29 • 16:25",
@@ -794,7 +846,7 @@
   },
   {
     "filename": "PXL_20261029_163826694.jpg",
-    "title": "Calving Glacier Wall Detail",
+    "title": "Fjallsárlón Calving Glacier Tongue",
     "place": "Fjallsárlón Glacier Lagoon",
     "is_hero": false,
     "datetime": "2026:10:29 16:38:26",
@@ -924,8 +976,8 @@
   },
   {
     "filename": "PXL_20261030_111446663.jpg",
-    "title": "Glacial Moulin & Sapphire Shaft",
-    "place": "Falljökull Ice Cave • Vatnajökull",
+    "title": "Tomaso on Falljökull Glacier",
+    "place": "Falljökull • Vatnajökull National Park",
     "is_hero": false,
     "datetime": "2026:10:30 11:14:46",
     "date_display": "Oct 30 • 11:14",
@@ -937,7 +989,7 @@
   },
   {
     "filename": "PXL_20261030_113703709.jpg",
-    "title": "Falljökull Icefall Panoramic Overlook",
+    "title": "Thumbs Up at the Falljökull Icefall",
     "place": "Falljökull • Vatnajökull National Park",
     "is_hero": false,
     "datetime": "2026:10:30 11:37:03",
@@ -949,21 +1001,21 @@
     "aspect": 0.562
   },
   {
-    "filename": "PXL_20261030_144833807.jpg",
-    "title": "Foss á Síðu River Rapids",
+    "filename": "PXL_20261030_144641655.jpg",
+    "title": "Embracing the Rapids of Foss á Síðu",
     "place": "Kirkjubæjarklaustur • South Coast",
     "is_hero": true,
-    "datetime": "2026:10:30 14:48:33",
-    "date_display": "Oct 30 • 14:48",
-    "lat": 63.852558,
-    "lon": -17.839481,
-    "thumb": "thumbs/PXL_20261030_144833807.jpg",
-    "src": "photos/PXL_20261030_144833807.jpg",
+    "datetime": "2026:10:30 14:46:41",
+    "date_display": "Oct 30 • 14:46",
+    "lat": 63.852569,
+    "lon": -17.839519,
+    "thumb": "thumbs/PXL_20261030_144641655.jpg",
+    "src": "photos/PXL_20261030_144641655.jpg",
     "aspect": 1.778
   },
   {
     "filename": "PXL_20261030_155025285.jpg",
-    "title": "Vík í Mýrdal Church & Coast",
+    "title": "Vík í Mýrdal Graveyard & Coast",
     "place": "Vík í Mýrdal",
     "is_hero": false,
     "datetime": "2026:10:30 15:50:25",
@@ -1014,16 +1066,16 @@
     "aspect": 0.562
   },
   {
-    "filename": "PXL_20261030_174357592.jpg",
-    "title": "Skógá River Canyon Cascades",
-    "place": "Skógá River • South Coast",
+    "filename": "PXL_20261030_174141238.jpg",
+    "title": "Skógafoss Vertical Canyon Plunge",
+    "place": "Skógar • South Coast",
     "is_hero": false,
-    "datetime": "2026:10:30 17:43:57",
-    "date_display": "Oct 30 • 17:43",
-    "lat": 63.531158,
-    "lon": -19.512106,
-    "thumb": "thumbs/PXL_20261030_174357592.jpg",
-    "src": "photos/PXL_20261030_174357592.jpg",
+    "datetime": "2026:10:30 17:41:41",
+    "date_display": "Oct 30 • 17:41",
+    "lat": 63.531167,
+    "lon": -19.512114,
+    "thumb": "thumbs/PXL_20261030_174141238.jpg",
+    "src": "photos/PXL_20261030_174141238.jpg",
     "aspect": 0.562
   },
   {
@@ -1106,7 +1158,7 @@
   },
   {
     "filename": "PXL_20261031_130448667.jpg",
-    "title": "Epine Trawler Rusted Hull Fragments",
+    "title": "Embracing the Elements at Djúpalónssandur",
     "place": "Djúpalónssandur • Snæfellsnes",
     "is_hero": false,
     "datetime": "2026:10:31 13:04:48",
@@ -1183,19 +1235,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261031_141754942.jpg",
-    "title": "Arnarstapi Basalt Sea Cliffs",
-    "place": "Arnarstapi • Snæfellsnes",
-    "is_hero": false,
-    "datetime": "2026:10:31 14:17:54",
-    "date_display": "Oct 31 • 14:17",
-    "lat": 64.767811,
-    "lon": -23.616953,
-    "thumb": "thumbs/PXL_20261031_141754942.jpg",
-    "src": "photos/PXL_20261031_141754942.jpg",
-    "aspect": 1.778
-  },
-  {
     "filename": "PXL_20261031_142536925.jpg",
     "title": "Arnarstapi Cliff Walk",
     "place": "Arnarstapi Coastal Trail",
@@ -1223,8 +1262,8 @@
   },
   {
     "filename": "PXL_20261031_153459957.jpg",
-    "title": "Búðahraun Ancient Lava Field",
-    "place": "Búðir • Snæfellsnes",
+    "title": "Ytri-Tunga Seal Colony... Allegedly",
+    "place": "Ytri-Tunga • Snæfellsnes",
     "is_hero": false,
     "datetime": "2026:10:31 15:34:59",
     "date_display": "Oct 31 • 15:34",
