@@ -25,7 +25,7 @@ FALLBACK_COORDS = {
 }
 
 FALLBACK_DATETIME = {
-    '50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg': '2026:10:18 07:30:00',
+    '50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg': '2026:10:24 12:00:00',
 }
 
 # 23 HIGHLIGHT HEROES (Every key milestone & trip climax)
@@ -65,12 +65,11 @@ HERO_SELECTION = {
 # EXACTLY 100 CURATED PHOTOS (Authentic travel narrative, ensemble, solo & highlights)
 JOURNEY_ALLOWED = {
     # Oct 18 - 21: Strandir & Westfjords with YOIK Choir
-    '50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg': ('Emma: Host, Former Flatmate & Adventure Benefactor', 'Reykjavík'),
-    'PXL_20261018_085524369.jpg': ('Steingrímsfjörður Valley Sunrise & Turf Shed', 'Drangsnes • Westfjords'),
-    'PXL_20261018_111649700.jpg': ('Drangsnes Coastal Canyon Waterfall', 'Drangsnes • Westfjords'),
-    'IMG_4188.jpeg': ('Weatherproof Hiking Squad', 'Drangsnes Canyon • Westfjords'),
+    'PXL_20261018_085524369.jpg': ('Laugarhóll Valley Sunrise & Turf Shed', 'Bjarnarfjörður • Westfjords'),
+    'PXL_20261018_111649700.jpg': ('Bjarnarfjörður Canyon Waterfall', 'Bjarnarfjörður • Westfjords'),
+    'IMG_4188.jpeg': ('Weatherproof Hiking Squad', 'Bjarnarfjörður Canyon • Westfjords'),
     'IMG_5644.jpeg': ('Drangsnes Geothermal Hot Tubs with YOIK', 'Drangsnes • Westfjords'),
-    '76752.jpg': ('YOIK Rehearsal in Drangsnes', 'Drangsnes • Westfjords'),
+    '76752.jpg': ('YOIK Rehearsal at the Laugarhóll', 'Bjarnarfjörður • Westfjords'),
     '77033.jpg': ('YOIK Choir on the Strandir Coast', 'Drangsnes • Westfjords'),
     '1000226438.jpg': ('Coastal Ridge Walk', 'Drangsnes • Westfjords'),
     '_DSC0296.JPG': ('Ascending Above Steingrímsfjörður', 'Drangsnes • Westfjords'),
@@ -102,16 +101,17 @@ JOURNEY_ALLOWED = {
     '1000089008.jpg': ('The YOIK Side of the Moon', 'Skólavörðustígur • Reykjavík'),
     'PXL_20261022_215442711.NIGHT.jpg': ('Reykjavík Aurora Borealis Vortex', 'Reykjavík Night Sky'),
     'PXL_20261023_214917931.jpg': ('YOIK-Huldur Gathering at RVK Brewing Co.', 'RVK Brewing Co. • Reykjavík'),
+    '50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg': ('Emma: Host, Former Flatmate & Adventure Benefactor', 'Reykjavík'),
     'PXL_20261025_154614300.jpg': ('Fríkirkjan í Reykjavík by the Tjörnin', 'Tjörnin • Reykjavík'),
     'PXL_20261025_185719775.jpg': ('Salted Liquorice & Rye Bread Ice Cream', 'Valdís • Grandi • Reykjavík'),
-    'PXL_20261025_215951062.jpg': ('Hostile Takeover by Cats Sofía & Friðurfinnari', 'Reykjavík'),
+    'PXL_20261025_215951062.jpg': ('Hostage to Sofía & Friðurfinnari', 'Reykjavík'),
     'PXL_20261026_161203144.jpg': ('Master of Molten Rock', 'Icelandic Lava Show • Reykjavík'),
     'PXL_20261026_162737009.jpg': ('Pouring 1100°C Liquid Basalt', 'Icelandic Lava Show • Reykjavík'),
     'PXL_20261026_163647963.jpg': ('Cooling Molten Lava Flow', 'Icelandic Lava Show • Reykjavík'),
 
     # Oct 27 - 28: DIVE.IS Silfra & Davíðsgjá Combo, and Reykjavík
     'IMG_4552.JPG': ('Descent into Continental Rift', 'Silfra Fissure (Dive 1)'),
-    'IMG_4557.JPG': ('Silfra Entry Platform (Tomaso & Werner)', 'Silfra Fissure • Þingvellir'),
+    'IMG_4557.JPG': ('Silfra Entry Platform with Werner', 'Silfra Fissure • Þingvellir'),
     'IMG_4582.JPG': ('Between Two Continents', 'Silfra Fissure (Dive 1)'),
     'IMG_4590.JPG': ('Silfra Hall & Light Beams', 'Silfra Fissure (Dive 1)'),
     'IMG_4616.JPG': ('Silfra Cathedral', 'Silfra Fissure (Dive 1)'),
@@ -130,9 +130,8 @@ JOURNEY_ALLOWED = {
 
     # Oct 29: Tröll Expeditions 2-Day South Coast & Glacier Lagoons
     'PXL_20261029_135850683.jpg': ('Diamond on Volcanic Black Sand', 'Diamond Beach'),
-    'PXL_20261029_140136936.jpg': ('Black Sand Ice Sculpture', 'Diamond Beach • Breiðamerkursandur'),
     'PXL_20261029_142643385.jpg': ('Jökulsárlón Tidal Channel', 'Jökulsárlón Outlet'),
-    'PXL_20261029_144151472.jpg': ('Floating Icebergs of Jökulsárlón', 'Jökulsárlón Glacier Lagoon'),
+    'PXL_20261029_143709427.jpg': ('Tomaso at Jökulsárlón Lagoon', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_144743380.jpg': ('Sculpted Blue Iceberg Arch', 'Jökulsárlón Glacier Lagoon'),
     'PXL_20261029_162106798.jpg': ('Crystal Ice Cave Subterranean River', 'Crystal Ice Cave • Breiðamerkurjökull'),
     'PXL_20261029_162555366.jpg': ('Crystal Ice Cave Cathedral Portal', 'Crystal Ice Cave • Breiðamerkurjökull'),
@@ -150,7 +149,7 @@ JOURNEY_ALLOWED = {
     'PXL_20261030_104201790.jpg': ('Glacial Eye Arch Portal', 'Falljökull Ice Cave • Vatnajökull'),
     'PXL_20261030_104610152.jpg': ('Sculpted Glacial Ceiling', 'Falljökull Ice Cave • Vatnajökull'),
     'PXL_20261030_104911635.jpg': ('Sapphire Ice Chamber', 'Falljökull Ice Cave • Vatnajökull'),
-    'PXL_20261030_111446663.jpg': ('Tomaso on Falljökull Glacier', 'Falljökull • Vatnajökull National Park'),
+    'PXL_20261030_111446663.jpg': ('On Falljökull Glacier', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_113703709.jpg': ('Thumbs Up at the Falljökull Icefall', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_144641655.jpg': ('Embracing the Rapids of Foss á Síðu', 'Kirkjubæjarklaustur • South Coast'),
     'PXL_20261030_155025285.jpg': ('Vík í Mýrdal Graveyard & Coast', 'Vík í Mýrdal'),
@@ -166,6 +165,7 @@ JOURNEY_ALLOWED = {
     'PXL_20261031_115324149~3.jpg': ('Ingjaldshólskirkja Church', 'Hellissandur • Snæfellsnes'),
     'PXL_20261031_123419469.jpg': ('Djúpalónssandur Black Pebble Cove', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_123856453.jpg': ('Djúpalónssandur Beach & Epine Trawler Wreck', 'Djúpalónssandur • Snæfellsnes'),
+    'PXL_20261031_124528772.jpg': ('Djúpalónssandur Sea Stacks & Sunburst', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_130448667.jpg': ('Embracing the Elements at Djúpalónssandur', 'Djúpalónssandur • Snæfellsnes'),
     'PXL_20261031_132850938.jpg': ('Lóndrangar Basalt Pinnacles', 'Lóndrangar • Snæfellsnes'),
     'PXL_20261031_133314715.jpg': ('Lóndrangar Ocean Promontory & Rain Squall', 'Lóndrangar • Snæfellsnes'),
@@ -174,7 +174,7 @@ JOURNEY_ALLOWED = {
     'PXL_20261031_140732367.jpg': ('Gatklettur Natural Sea Arch', 'Arnarstapi Coast'),
     'PXL_20261031_142536925.jpg': ('Arnarstapi Cliff Walk', 'Arnarstapi Coastal Trail'),
     'PXL_20261031_150329519.jpg': ('Búðakirkja Black Church', 'Búðir • Snæfellsnes'),
-    'PXL_20261031_153459957.jpg': ('Ytri-Tunga Seal Colony... Allegedly', 'Ytri-Tunga • Snæfellsnes'),
+    'PXL_20261031_153459957.jpg': ('Ytri-Tunga Seal Colony... Allegedly :)', 'Ytri-Tunga • Snæfellsnes'),
     'PXL_20261031_154042672.jpg': ('Snæfellsnes Mountain Ridge', 'Snæfellsnes Peninsula'),
     'PXL_20261031_211327423.jpg': ('Farewell, Þorsteinn and Ingibjörg!', 'Reykjavík'),
 }

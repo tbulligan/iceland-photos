@@ -1,21 +1,8 @@
 [
   {
-    "filename": "50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
-    "title": "Emma: Host, Former Flatmate & Adventure Benefactor",
-    "place": "Reykjavík",
-    "is_hero": false,
-    "datetime": "2026:10:18 07:30:00",
-    "date_display": "Oct 18 • 07:30",
-    "lat": 64.145,
-    "lon": -21.93,
-    "thumb": "thumbs/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
-    "src": "photos/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
-    "aspect": 0.562
-  },
-  {
     "filename": "PXL_20261018_085524369.jpg",
-    "title": "Steingrímsfjörður Valley Sunrise & Turf Shed",
-    "place": "Drangsnes • Westfjords",
+    "title": "Laugarhóll Valley Sunrise & Turf Shed",
+    "place": "Bjarnarfjörður • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:18 08:55:24",
     "date_display": "Oct 18 • 08:55",
@@ -27,8 +14,8 @@
   },
   {
     "filename": "PXL_20261018_111649700.jpg",
-    "title": "Drangsnes Coastal Canyon Waterfall",
-    "place": "Drangsnes • Westfjords",
+    "title": "Bjarnarfjörður Canyon Waterfall",
+    "place": "Bjarnarfjörður • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:18 11:16:49",
     "date_display": "Oct 18 • 11:16",
@@ -41,7 +28,7 @@
   {
     "filename": "IMG_4188.jpeg",
     "title": "Weatherproof Hiking Squad",
-    "place": "Drangsnes Canyon • Westfjords",
+    "place": "Bjarnarfjörður Canyon • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:18 11:17:23",
     "date_display": "Oct 18 • 11:17",
@@ -53,8 +40,8 @@
   },
   {
     "filename": "76752.jpg",
-    "title": "YOIK Rehearsal in Drangsnes",
-    "place": "Drangsnes • Westfjords",
+    "title": "YOIK Rehearsal at the Laugarhóll",
+    "place": "Bjarnarfjörður • Westfjords",
     "is_hero": false,
     "datetime": "2026:10:18 15:59:54",
     "date_display": "Oct 18 • 15:59",
@@ -429,6 +416,19 @@
     "aspect": 1.778
   },
   {
+    "filename": "50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "title": "Emma: Host, Former Flatmate & Adventure Benefactor",
+    "place": "Reykjavík",
+    "is_hero": false,
+    "datetime": "2026:10:24 12:00:00",
+    "date_display": "Oct 24 • 12:00",
+    "lat": 64.145,
+    "lon": -21.93,
+    "thumb": "thumbs/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "src": "photos/50e9e03c-63fc-42ea-80c6-3a3f112098fb.jpg",
+    "aspect": 0.562
+  },
+  {
     "filename": "PXL_20261025_154614300.jpg",
     "title": "Fríkirkjan í Reykjavík by the Tjörnin",
     "place": "Tjörnin • Reykjavík",
@@ -456,7 +456,7 @@
   },
   {
     "filename": "PXL_20261025_215951062.jpg",
-    "title": "Hostile Takeover by Cats Sofía & Friðurfinnari",
+    "title": "Hostage to Sofía & Friðurfinnari",
     "place": "Reykjavík",
     "is_hero": false,
     "datetime": "2026:10:25 21:59:51",
@@ -521,7 +521,7 @@
   },
   {
     "filename": "IMG_4557.JPG",
-    "title": "Silfra Entry Platform (Tomaso & Werner)",
+    "title": "Silfra Entry Platform with Werner",
     "place": "Silfra Fissure • Þingvellir",
     "is_hero": false,
     "datetime": "2023:11:03 11:41:43",
@@ -741,19 +741,6 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261029_140136936.jpg",
-    "title": "Black Sand Ice Sculpture",
-    "place": "Diamond Beach • Breiðamerkursandur",
-    "is_hero": false,
-    "datetime": "2026:10:29 14:01:36",
-    "date_display": "Oct 29 • 14:01",
-    "lat": 64.043017,
-    "lon": -16.175503,
-    "thumb": "thumbs/PXL_20261029_140136936.jpg",
-    "src": "photos/PXL_20261029_140136936.jpg",
-    "aspect": 1.778
-  },
-  {
     "filename": "PXL_20261029_142643385.jpg",
     "title": "Jökulsárlón Tidal Channel",
     "place": "Jökulsárlón Outlet",
@@ -767,17 +754,17 @@
     "aspect": 1.778
   },
   {
-    "filename": "PXL_20261029_144151472.jpg",
-    "title": "Floating Icebergs of Jökulsárlón",
+    "filename": "PXL_20261029_143709427.jpg",
+    "title": "Tomaso at Jökulsárlón Lagoon",
     "place": "Jökulsárlón Glacier Lagoon",
     "is_hero": false,
-    "datetime": "2026:10:29 14:41:51",
-    "date_display": "Oct 29 • 14:41",
-    "lat": 64.048419,
-    "lon": -16.179811,
-    "thumb": "thumbs/PXL_20261029_144151472.jpg",
-    "src": "photos/PXL_20261029_144151472.jpg",
-    "aspect": 1.778
+    "datetime": "2026:10:29 14:37:09",
+    "date_display": "Oct 29 • 14:37",
+    "lat": 64.048367,
+    "lon": -16.181042,
+    "thumb": "thumbs/PXL_20261029_143709427.jpg",
+    "src": "photos/PXL_20261029_143709427.jpg",
+    "aspect": 0.562
   },
   {
     "filename": "PXL_20261029_144743380.jpg",
@@ -976,7 +963,7 @@
   },
   {
     "filename": "PXL_20261030_111446663.jpg",
-    "title": "Tomaso on Falljökull Glacier",
+    "title": "On Falljökull Glacier",
     "place": "Falljökull • Vatnajökull National Park",
     "is_hero": false,
     "datetime": "2026:10:30 11:14:46",
@@ -1157,6 +1144,19 @@
     "aspect": 1.778
   },
   {
+    "filename": "PXL_20261031_124528772.jpg",
+    "title": "Djúpalónssandur Sea Stacks & Sunburst",
+    "place": "Djúpalónssandur • Snæfellsnes",
+    "is_hero": false,
+    "datetime": "2026:10:31 12:45:28",
+    "date_display": "Oct 31 • 12:45",
+    "lat": 64.753156,
+    "lon": -23.899347,
+    "thumb": "thumbs/PXL_20261031_124528772.jpg",
+    "src": "photos/PXL_20261031_124528772.jpg",
+    "aspect": 1.778
+  },
+  {
     "filename": "PXL_20261031_130448667.jpg",
     "title": "Embracing the Elements at Djúpalónssandur",
     "place": "Djúpalónssandur • Snæfellsnes",
@@ -1262,7 +1262,7 @@
   },
   {
     "filename": "PXL_20261031_153459957.jpg",
-    "title": "Ytri-Tunga Seal Colony... Allegedly",
+    "title": "Ytri-Tunga Seal Colony... Allegedly :)",
     "place": "Ytri-Tunga • Snæfellsnes",
     "is_hero": false,
     "datetime": "2026:10:31 15:34:59",
