@@ -151,7 +151,7 @@ JOURNEY_ALLOWED = {
     'PXL_20261030_111446663.jpg': ('On Falljökull Glacier', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_113703709.jpg': ('Thumbs Up at the Falljökull Icefall', 'Falljökull • Vatnajökull National Park'),
     'PXL_20261030_144641655.jpg': ('Embracing the Rapids of Foss á Síðu', 'Kirkjubæjarklaustur • South Coast'),
-    'PXL_20261030_155025285.jpg': ('Vík í Mýrdal Graveyard & Coast', 'Vík í Mýrdal'),
+    'PXL_20261030_155025285.jpg': ('Vík í Mýrdal Graveyard & Mountains', 'Vík í Mýrdal'),
     'PXL_20261030_155507298.jpg': ('Reynisdrangar Sea Stacks from Vík', 'Vík í Mýrdal'),
     'PXL_20261030_163330009.jpg': ('Reynisfjara Black Sand Beach', 'Reynisfjara Beach'),
     'PXL_20261030_173120852.jpg': ('Skógafoss Waterfall', 'Skógar • South Coast'),
