@@ -303,6 +303,9 @@ def build():
     with open(os.path.join(OUTPUT_DIR, 'data.json'), 'w', encoding='utf-8') as f:
         json.dump(photos, f, indent=2, ensure_ascii=False)
 
+    with open(os.path.join(OUTPUT_DIR, 'data.js'), 'w', encoding='utf-8') as f:
+        f.write('window.ALL_PHOTOS = ' + json.dumps(photos, indent=2, ensure_ascii=False) + ';\n')
+
     heroes = sum(1 for p in photos if p['is_hero'])
     print(f"Build complete: {len(photos)} curated photos total. Heroes: {heroes}.")
 

@@ -321,6 +321,7 @@ body {
   user-select: none;
   display: block;
   background: #000;
+  dynamic-range: high;
 }
 
 /* Invisible Touch & Click Zones */

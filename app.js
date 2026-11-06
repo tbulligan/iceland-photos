@@ -6,20 +6,23 @@ let preloadedNext = null, preloadedPrev = null;
 
 // Init
 async function init() {
-  try {
-    const res = await fetch('data.json?v=' + Date.now());
-    allPhotos = await res.json();
-    
-    const countEl = document.getElementById('photo-count');
-    if (countEl) countEl.textContent = `${allPhotos.length} photos`;
-
-    initMap();
-    renderGrid();
-    updateMapMarkers();
-    initEvents();
-  } catch (err) {
-    console.error('Failed to load photos:', err);
+  allPhotos = window.ALL_PHOTOS || [];
+  if (!allPhotos.length) {
+    try {
+      const res = await fetch('data.json?v=' + Date.now());
+      allPhotos = await res.json();
+    } catch (e) {
+      console.warn('Fetch failed:', e);
+    }
   }
+
+  const countEl = document.getElementById('photo-count');
+  if (countEl) countEl.textContent = `${allPhotos.length} photos`;
+
+  if (typeof L !== 'undefined') initMap();
+  renderGrid();
+  if (typeof L !== 'undefined') updateMapMarkers();
+  initEvents();
 }
 
 // Satellite Map (Esri World Imagery, Zero API Key)
