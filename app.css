@@ -322,6 +322,7 @@ body {
   display: block;
   background: #000;
   dynamic-range: high;
+  image-orientation: from-image;
 }
 
 /* Invisible Touch & Click Zones */

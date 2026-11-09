@@ -240,8 +240,6 @@ def build():
         full_dest = os.path.join(PHOTOS_DIR, web_name)
         thumb_dest = os.path.join(THUMBS_DIR, web_name)
 
-        shutil.copy2(src_path, full_dest)
-
         img = Image.open(src_path)
         exif = img.getexif()
         exif_ifd = exif.get_ifd(0x8769) if exif else None
@@ -250,9 +248,22 @@ def build():
         if not dt_str and fname in FALLBACK_DATETIME:
             dt_str = FALLBACK_DATETIME[fname]
 
+        # Full photo with correct orientation
+        transposed_img = ImageOps.exif_transpose(img)
+        w, h = transposed_img.size
+        orient = exif.get(0x0112) if exif else 1
+        if orient in (None, 1):
+            shutil.copy2(src_path, full_dest)
+        else:
+            save_exif = img.getexif()
+            save_exif[0x0112] = 1
+            full_img = transposed_img
+            if full_img.mode in ('RGBA', 'P'):
+                full_img = full_img.convert('RGB')
+            full_img.save(full_dest, 'JPEG', quality=95, exif=save_exif, optimize=True)
+
         # Thumbnail with correct EXIF orientation
-        thumb_img = ImageOps.exif_transpose(img)
-        w, h = thumb_img.size
+        thumb_img = transposed_img.copy()
         thumb_img.thumbnail((720, 720), Image.Resampling.LANCZOS)
         if thumb_img.mode in ('RGBA', 'P'):
             thumb_img = thumb_img.convert('RGB')
