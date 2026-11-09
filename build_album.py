@@ -263,7 +263,10 @@ def build():
                 full_img = full_img.resize((int(round(w * scale)), int(round(h * scale))), Image.Resampling.LANCZOS)
             if full_img.mode in ('RGBA', 'P'):
                 full_img = full_img.convert('RGB')
-            full_img.save(full_dest, 'JPEG', quality=85, subsampling=2, exif=save_exif, optimize=True)
+            save_kwargs = {'quality': 85, 'subsampling': 2, 'exif': save_exif, 'optimize': True}
+            if img.info.get('icc_profile'):
+                save_kwargs['icc_profile'] = img.info['icc_profile']
+            full_img.save(full_dest, 'JPEG', **save_kwargs)
 
         # Thumbnail with correct EXIF orientation
         thumb_img = transposed_img.copy()
