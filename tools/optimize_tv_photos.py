@@ -1,64 +1,70 @@
-import os, subprocess, io
-from PIL import Image
+import os, glob
+from PIL import Image, ImageOps
 
-TARGETS = [
-    'photos/77436.jpg',
-    'photos/IMG_4188.jpg'
-]
+PHOTOS_DIR = os.path.abspath('photos')
 
-def optimize_file(rel_path, max_dim=3840, quality=85):
-    path = os.path.abspath(rel_path)
-    if not os.path.exists(path):
-        print(f"File not found: {path}")
-        return
+def optimize_all():
+    files = sorted(glob.glob(os.path.join(PHOTOS_DIR, '*')))
+    total_before = 0
+    total_after = 0
+    processed = 0
 
-    # Extract original ICC profile from git if present
-    icc = None
-    try:
-        blob = subprocess.check_output(['git', 'show', f'6ec769d:{rel_path}'])
-        orig_git_im = Image.open(io.BytesIO(blob))
-        icc = orig_git_im.info.get('icc_profile')
-    except Exception as e:
-        print(f"Warning extracting ICC: {e}")
-
-    with Image.open(path) as img:
-        orig_size = img.size
-        w, h = orig_size
+    for path in files:
+        base = os.path.basename(path)
+        if base.startswith('PXL_'):
+            continue  # Keep original Pixel photos with Ultra HDR untouched
         
-        # Scale to max dimension 3840 if larger
-        if max(w, h) > max_dim:
-            scale = max_dim / float(max(w, h))
-            new_size = (int(round(w * scale)), int(round(h * scale)))
-            resample_filter = getattr(Image.Resampling, 'LANCZOS', Image.LANCZOS)
-            out_img = img.resize(new_size, resample_filter)
-        else:
-            out_img = img.copy()
-            new_size = orig_size
+        orig_bytes = os.path.getsize(path)
+        with Image.open(path) as img:
+            w, h = img.size
+            max_dim = max(w, h)
+            needs_resize = (max_dim > 3840)
+            needs_reencode = (orig_bytes > 1.8 * 1024 * 1024)
 
-        if out_img.mode in ('RGBA', 'P'):
-            out_img = out_img.convert('RGB')
+            if not needs_resize and not needs_reencode:
+                continue
 
-        exif = img.getexif()
-        exif[0x0112] = 1 # upright
+            transposed = ImageOps.exif_transpose(img)
+            tw, th = transposed.size
 
-        tmp_path = path + ".opt.jpg"
-        save_kwargs = {
-            'quality': quality,
-            'subsampling': 2,
-            'exif': exif,
-            'optimize': True
-        }
-        if icc:
-            save_kwargs['icc_profile'] = icc
+            if max(tw, th) > 3840:
+                scale = 3840.0 / max(tw, th)
+                new_size = (int(round(tw * scale)), int(round(th * scale)))
+                resample = getattr(Image.Resampling, 'LANCZOS', Image.LANCZOS)
+                out_img = transposed.resize(new_size, resample)
+            else:
+                out_img = transposed.copy()
+                new_size = (tw, th)
 
-        out_img.save(tmp_path, "JPEG", **save_kwargs)
+            if out_img.mode in ('RGBA', 'P'):
+                out_img = out_img.convert('RGB')
 
-    orig_bytes = os.path.getsize(path)
-    new_bytes = os.path.getsize(tmp_path)
-    os.replace(tmp_path, path)
-    
-    print(f"{rel_path}: {new_size} ({new_bytes/1e6:.2f}MB, ICC embedded={bool(icc)})")
+            exif = img.getexif()
+            exif[0x0112] = 1 # upright
+
+            save_kwargs = {
+                'quality': 85,
+                'subsampling': 2,
+                'exif': exif,
+                'optimize': True
+            }
+            if img.info.get('icc_profile'):
+                save_kwargs['icc_profile'] = img.info['icc_profile']
+
+            tmp_path = path + '.opt.jpg'
+            out_img.save(tmp_path, 'JPEG', **save_kwargs)
+
+        new_bytes = os.path.getsize(tmp_path)
+        os.replace(tmp_path, path)
+
+        total_before += orig_bytes
+        total_after += new_bytes
+        processed += 1
+        pct = 100 * (1 - new_bytes / orig_bytes)
+        print(f"{base:22s}: ({w}x{h}) {orig_bytes/1e6:5.2f}MB -> ({new_size[0]}x{new_size[1]}) {new_bytes/1e6:5.2f}MB (-{pct:4.1f}%)")
+
+    print(f"\nFinished: {processed} photos optimized.")
+    print(f"Total payload: {total_before/1e6:.2f}MB -> {total_after/1e6:.2f}MB (Saved {(total_before-total_after)/1e6:.2f}MB, -{100*(1-total_after/total_before):.1f}%)")
 
 if __name__ == '__main__':
-    for target in TARGETS:
-        optimize_file(target)
+    optimize_all()
