@@ -258,9 +258,12 @@ def build():
             save_exif = img.getexif()
             save_exif[0x0112] = 1
             full_img = transposed_img
+            if max(w, h) > 3840:
+                scale = 3840.0 / max(w, h)
+                full_img = full_img.resize((int(round(w * scale)), int(round(h * scale))), Image.Resampling.LANCZOS)
             if full_img.mode in ('RGBA', 'P'):
                 full_img = full_img.convert('RGB')
-            full_img.save(full_dest, 'JPEG', quality=95, exif=save_exif, optimize=True)
+            full_img.save(full_dest, 'JPEG', quality=85, subsampling=2, exif=save_exif, optimize=True)
 
         # Thumbnail with correct EXIF orientation
         thumb_img = transposed_img.copy()
